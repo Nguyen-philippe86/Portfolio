@@ -24,3 +24,28 @@ document.addEventListener('scroll',()=>{
     parallax.style.right = value * 0.5 + 'px';
     parallax2.style.left = value * 1.3 + 'px';
 });
+
+//
+window.onload = function() {
+    const boxPortfolio = document.getElementById('boxPortfolio');
+    window.addEventListener('scroll', scrollBoxPortfolio);
+    function scrollBoxPortfolio() {
+        if(window.scrollY >= 300 ){
+            boxPortfolio.style.opacity = '1';
+            boxPortfolio.style.transition = '1.5s ease-in-out';
+        }
+        else{
+            boxPortfolio.style.opacity = '0';
+        }
+    }
+}
+
+
+
+//parallax portfolio
+// const boxPortfolio = document.getElementById('boxPortfolio');
+
+// window.addEventListener('onload', ()=>{
+
+//     boxPortfolio.style = window. * 2 + 'px';
+// });

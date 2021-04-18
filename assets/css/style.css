@@ -153,7 +153,9 @@ footer .containerFooter .contactInfo > i a:hover {
 
 .accueil {
   width: 100%;
-  background: linear-gradient(#3ae8bfe8, #3AE8C0);
+  height: 400vh;
+  background: linear-gradient(#3AE8C0, #00e1ff);
+  overflow: hidden;
 }
 .accueil .containerAccueil {
   width: 70%;
@@ -216,6 +218,42 @@ footer .containerFooter .contactInfo > i a:hover {
     top: 29%;
     font-size: 13vw;
     letter-spacing: -3px;
+  }
+}
+.accueil .containerPortfolio {
+  width: 90%;
+  margin: 10vh auto;
+}
+.accueil .containerPortfolio #boxPortfolio {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  background: white;
+  align-items: center;
+}
+.accueil .containerPortfolio #boxPortfolio .titlePortfolio {
+  padding-left: 5vw;
+  font-size: 10vw;
+  font-family: oswald;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: -10px;
+}
+.accueil .containerPortfolio #boxPortfolio .contentPortfolio {
+  padding: 0 5vw;
+  font-family: oswald;
+}
+.accueil .containerPortfolio #boxPortfolio .contentPortfolio h3 {
+  font-size: 3vw;
+  font-weight: 300;
+  margin: 2vh 0;
+}
+.accueil .containerPortfolio #boxPortfolio .contentPortfolio p {
+  font-family: roboto;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .accueil #boxPortfolio {
+    flex-direction: column;
   }
 }
 
