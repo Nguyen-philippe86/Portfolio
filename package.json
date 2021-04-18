@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch assets/sass/style.scss:assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nguyen-philippe86/portfolio.git"
+  },
+  "author": "Philippe Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nguyen-philippe86/portfolio/issues"
+  },
+  "homepage": "https://github.com/Nguyen-philippe86/portfolio#readme",
+  "dependencies": {
+    "sass": "^1.32.10"
+  }
+}

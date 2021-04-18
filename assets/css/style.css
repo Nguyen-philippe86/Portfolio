@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  background: transparent;
+  z-index: 2;
+}
+header nav {
+  width: 70%;
+  margin: auto;
+  padding: 10px 0;
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .logo {
+  padding: 0 15px;
+}
+header nav .logo img {
+  width: 75px;
+}
+header nav .mainMenu {
+  display: flex;
+  font-family: oswald;
+}
+header nav .mainMenu li {
+  list-style: none;
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+header nav .mainMenu li a {
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  font-size: 15px;
+  font-weight: semi-bold;
+}
+header nav .mainMenu li a:hover {
+  transform: scale(1.15);
+  transition: all 0.35s ease-in-out;
+  z-index: 1;
+  color: white;
+}
+header nav .mainMenu li .social {
+  padding-left: 5px;
+}
+header nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+header nav .mainMenu .closeMenu, header nav > i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+header .separateur {
+  width: 75%;
+  margin: auto;
+  height: 1px;
+  background-color: black;
+}
+@media screen and (max-width: 950px) {
+  header nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: top 1s ease-in-out;
+    display: none;
+    color: #3AE8C0;
+  }
+  header nav .mainMenu li a {
+    padding: 10px 10px;
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+  }
+  header nav .mainMenu li .social {
+    padding-top: 30px;
+  }
+  header nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  header nav .openMenu {
+    display: block;
+  }
+  header nav .mainMenu li a:hover {
+    background: none;
+    color: #3AE8C0;
+    font-size: 1, 5rem;
+  }
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  background: black;
+  padding: 7px 0;
+}
+footer .containerFooter {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: oswald;
+  font-size: 12px;
+  color: white;
+}
+footer .containerFooter .contactInfo > i {
+  padding: 0 15px;
+}
+footer .containerFooter .contactInfo > i a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  font-family: oswald;
+  font-weight: 400;
+}
+footer .containerFooter .contactInfo > i a:hover {
+  color: blue;
+}
+@media screen and (max-width: 950px) {
+  footer .containerFooter {
+    width: 90%;
+    margin: auto;
+    font-size: 10px;
+    flex-direction: column-reverse;
+  }
+  footer .containerFooter .contactInfo {
+    padding-bottom: 10px;
+  }
+}
+
+.accueil {
+  width: 100%;
+  background: linear-gradient(#3ae8bfe8, #3AE8C0);
+}
+.accueil .containerAccueil {
+  width: 70%;
+  margin: auto;
+  height: 100vh;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+}
+.accueil .containerAccueil h1 {
+  position: relative;
+  top: 60%;
+  font-family: oswald;
+  font-weight: 400;
+  font-size: 10vw;
+  letter-spacing: -10px;
+  text-transform: uppercase;
+}
+.accueil .containerAccueil h2 {
+  position: relative;
+  top: 47%;
+  font-family: oswald;
+  font-weight: 400;
+  font-size: 8vw;
+  letter-spacing: -6px;
+  text-transform: uppercase;
+  color: white;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .accueil .containerAccueil {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+  }
+  .accueil .containerAccueil h1 {
+    top: 40%;
+    font-size: 10vw;
+    letter-spacing: -6px;
+  }
+  .accueil .containerAccueil h2 {
+    top: 32%;
+    font-size: 9vw;
+    letter-spacing: -6px;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  .accueil .containerAccueil {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  .accueil .containerAccueil h1 {
+    top: 35%;
+    font-size: 13vw;
+    letter-spacing: -3px;
+  }
+  .accueil .containerAccueil h2 {
+    top: 29%;
+    font-size: 13vw;
+    letter-spacing: -3px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

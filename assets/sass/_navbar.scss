@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{ 
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    background: transparent;
+    z-index: 2;
+    nav{
+        width: 70%;   
+        margin: auto;
+        padding: 10px 0;
+        display: flex;
+        text-decoration: none;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            padding: 0 15px;
+            img{
+                width: 75px;
+            }
+        }
+        .mainMenu{
+            display: flex;
+            font-family: oswald;
+            li{
+                list-style: none;
+                padding: 0 15px;
+                text-transform: uppercase;
+                a{
+                    text-decoration: none;
+                    display: inline-block;
+                    color: black;
+                    font-size: 15px;
+                    font-weight: semi-bold;
+                    &:hover{
+                        transform: scale(1.15);
+                        transition: all 0.35s ease-in-out;
+                        z-index: 1;
+                        color: white;
+                    }
+                }
+                .social{
+                    padding-left: 5px;
+                }
+            }
+        }
+        .openMenu{
+            font-size: 2rem;
+            margin: 20px;
+            display: none;
+            cursor: pointer;
+            }
+        .mainMenu .closeMenu, > i{
+            font-size: 2rem;
+            display: none;
+            cursor: pointer;
+        }
+    }
+    .separateur{
+        width: 75%;
+        margin: auto;
+        height: 1px;
+        background-color: black;
+    }
+    @media screen and (max-width: 950px){
+        nav .mainMenu{
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 10;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.9);
+            transition: top 1s ease-in-out;
+            display: none;
+            color: #3AE8C0;
+            li{
+                a{
+                    padding: 10px 10px;
+                    font-size: 30px;
+                    font-weight: 300;
+                    color: white;
+                }
+                .social{
+                    padding-top: 30px;
+                }
+            }
+        }
+        nav .mainMenu .closeMenu{
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        nav .openMenu{
+            display: block;
+        }
+        nav .mainMenu li a:hover{
+            background: none;
+            color: #3AE8C0;
+            font-size: 1,5rem;
+        }
+    }
+}
