@@ -154,7 +154,7 @@ footer .containerFooter .contactInfo > i a:hover {
 .accueil {
   width: 100%;
   height: 400vh;
-  background: linear-gradient(#3AE8C0, #00e1ff);
+  background: linear-gradient(#3AE8C0, #7692FF);
   overflow: hidden;
 }
 .accueil .containerAccueil {
@@ -226,22 +226,31 @@ footer .containerFooter .contactInfo > i a:hover {
 }
 .accueil .containerPortfolio #boxPortfolio {
   position: relative;
-  height: 80vh;
+  height: 95vh;
   display: flex;
-  background: white;
   align-items: center;
 }
 .accueil .containerPortfolio #boxPortfolio .titlePortfolio {
-  padding-left: 5vw;
-  font-size: 10vw;
+  padding: 15vh 3vw;
+  font-size: 9vw;
   font-family: oswald;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: -10px;
+  background: #00171F;
+  color: white;
+  position: relative;
+  left: 4vw;
+  z-index: 1;
 }
 .accueil .containerPortfolio #boxPortfolio .contentPortfolio {
-  padding: 0 5vw;
+  padding: 5vw 3vw 5vw 10vw;
   font-family: oswald;
+  background: #003459;
+  color: white;
+  z-index: 0;
+  position: relative;
+  right: 3vw;
 }
 .accueil .containerPortfolio #boxPortfolio .contentPortfolio h3 {
   font-size: 3vw;
@@ -250,10 +259,316 @@ footer .containerFooter .contactInfo > i a:hover {
 }
 .accueil .containerPortfolio #boxPortfolio .contentPortfolio p {
   font-family: roboto;
+  color: #c7c7c7;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .accueil #boxPortfolio {
     flex-direction: column;
+  }
+}
+.accueil .containerProjet {
+  width: 90%;
+  margin: 10vh auto;
+}
+.accueil .containerProjet #boxProjet {
+  position: relative;
+  height: 192vh;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+.accueil .containerProjet #boxProjet .titleProjet {
+  padding: 15vh 3vw;
+  font-size: 9vw;
+  font-family: oswald;
+  text-align: center;
+  line-height: 20vh;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: -10px;
+  background: #00171F;
+  color: white;
+  position: relative;
+  right: 3vw;
+  top: 20vh;
+  z-index: 1;
+}
+.accueil .containerProjet #boxProjet .contentProjet {
+  padding: 0vw 0vw 0vw 9vw;
+  width: 100%;
+  font-family: oswald;
+  background: #003459;
+  color: white;
+  z-index: 0;
+  position: relative;
+  left: 4vw;
+}
+.accueil .containerProjet #boxProjet .contentProjet .projets {
+  width: 30vw;
+  height: 50vh;
+  margin: 5vh 0;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+.accueil .containerProjet #boxProjet .contentProjet .projets .cardFace {
+  position: absolute;
+  width: 30vw;
+  height: 90%;
+  background: white;
+  color: black;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.accueil .containerProjet #boxProjet .contentProjet .projets .cardFace h3 {
+  font-size: 1.75vw;
+  font-weight: 500;
+  margin: 2vh 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+.accueil .containerProjet #boxProjet .contentProjet .projets .cardBack {
+  position: absolute;
+  width: 30vw;
+  height: 90%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+.accueil .containerProjet #boxProjet .contentProjet .projets .cardBack img {
+  width: 100%;
+}
+.accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .langage {
+  margin: 2vh 0;
+  display: flex;
+  align-items: center;
+}
+.accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .langage li {
+  list-style-type: none;
+  padding: 0 0.5vw;
+}
+.accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .langage li img {
+  width: 40px;
+}
+.accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .btnVisite {
+  background: #00171F;
+  padding: 1vh 5vw;
+  top: 3vh;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  width: 60%;
+  margin: 1vh auto;
+  text-align: center;
+  cursor: pointer;
+}
+.accueil .containerProjet #boxProjet .contentProjet .projets:hover {
+  transform: rotateY(180deg);
+}
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  .accueil .containerProjet #boxProjet {
+    height: 150vh;
+  }
+}
+
+.prestation {
+  width: 100%;
+  height: 230vh;
+  background: linear-gradient(#7692FF, #7647EA);
+  overflow: hidden;
+}
+.prestation .containerPrestation {
+  width: 90%;
+  margin: 5vh auto;
+  position: relative;
+  top: 13vh;
+  display: flex;
+  flex-direction: column;
+}
+.prestation .containerPrestation #boxPrestation {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: oswald;
+}
+.prestation .containerPrestation #boxPrestation .titlePrestation {
+  font-size: 9vw;
+  font-family: oswald;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: -10px;
+  color: white;
+  position: relative;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .prestation .containerPrestation #boxPrestation .titlePrestation {
+    font-size: 10vw;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  .prestation .containerPrestation #boxPrestation .titlePrestation {
+    font-size: 10vw;
+    letter-spacing: 0;
+  }
+}
+.prestation .containerPrestation #boxPrestation p {
+  font-size: 1.4vw;
+  text-align: center;
+  margin: 3vh 0;
+}
+.prestation .containerPrestation #boxPrestation p span {
+  letter-spacing: -2px;
+  font-size: 2.5vw;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .prestation .containerPrestation #boxPrestation p {
+    font-size: 3vw;
+  }
+  .prestation .containerPrestation #boxPrestation p span {
+    letter-spacing: 0;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  .prestation .containerPrestation #boxPrestation p {
+    font-size: 3vw;
+  }
+  .prestation .containerPrestation #boxPrestation p span {
+    font-size: 3vw;
+    letter-spacing: 0;
+  }
+}
+.prestation .containerPrestation #boxPrestation .contentPrestation {
+  position: relative;
+  top: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.prestation .containerPrestation #boxPrestation .contentPrestation .services {
+  width: 375px;
+  margin: 10px;
+  padding: 20px;
+  background: white;
+  display: flex;
+  color: #00171F;
+  flex-direction: column;
+  align-items: center;
+}
+.prestation .containerPrestation #boxPrestation .contentPrestation .services i {
+  font-size: 10vw;
+  margin: 1vh auto;
+  color: #00171F;
+}
+.prestation .containerPrestation #boxPrestation .contentPrestation .services h4 {
+  margin: 1vh auto;
+  text-transform: uppercase;
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+.prestation .containerPrestation #boxPrestation .contentPrestation .services p {
+  font-family: roboto;
+  font-size: 1vw;
+  margin: 1vh auto;
+  list-style-type: none;
+}
+.prestation .containerPrestation #boxPrestation .contentPrestation .services:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+  background: #00171F;
+  color: white;
+}
+.prestation .containerPrestation #boxPrestation .contentPrestation .services:hover i {
+  color: white;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .prestation .containerPrestation #boxPrestation .contentPrestation .services {
+    width: 45%;
+  }
+  .prestation .containerPrestation #boxPrestation .contentPrestation .services i {
+    font-size: 10vw;
+  }
+  .prestation .containerPrestation #boxPrestation .contentPrestation .services h4 {
+    font-size: 2.5vw;
+  }
+  .prestation .containerPrestation #boxPrestation .contentPrestation .services p {
+    font-size: 2vw;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  .prestation .containerPrestation #boxPrestation .contentPrestation .services {
+    width: 90%;
+  }
+  .prestation .containerPrestation #boxPrestation .contentPrestation .services i {
+    font-size: 20vw;
+  }
+  .prestation .containerPrestation #boxPrestation .contentPrestation .services h4 {
+    font-size: 5vw;
+  }
+  .prestation .containerPrestation #boxPrestation .contentPrestation .services p {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  .prestation .containerPrestation #boxPrestation .contentPrestation {
+    top: 5vh;
+  }
+}
+.prestation .containerPrestation #linkContact {
+  position: relative;
+  top: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: oswald;
+}
+.prestation .containerPrestation #linkContact h4 {
+  font-size: 3vw;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+}
+.prestation .containerPrestation #linkContact .btnContact {
+  background: #00171F;
+  padding: 1vh 5vw;
+  top: 3vh;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  margin: 2vh auto;
+  text-align: center;
+  cursor: pointer;
+}
+.prestation .containerPrestation #linkContact .btnContact:hover {
+  background: white;
+  color: #00171F;
+  transition: 1s;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .prestation .containerPrestation #linkContact {
+    top: 15vh;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  .prestation .containerPrestation #linkContact {
+    top: 10vh;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .prestation {
+    height: 175vh;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  .prestation {
+    height: 300vh;
   }
 }
 

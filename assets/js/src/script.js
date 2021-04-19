@@ -25,27 +25,31 @@ document.addEventListener('scroll',()=>{
     parallax2.style.left = value * 1.3 + 'px';
 });
 
-//
+//animation portfolio
 window.onload = function() {
     const boxPortfolio = document.getElementById('boxPortfolio');
+    const boxProjet = document.getElementById('boxProjet');
+
     window.addEventListener('scroll', scrollBoxPortfolio);
+    window.addEventListener('scroll', scrollBoxProjet);
+
     function scrollBoxPortfolio() {
         if(window.scrollY >= 300 ){
             boxPortfolio.style.opacity = '1';
-            boxPortfolio.style.transition = '1.5s ease-in-out';
+            boxPortfolio.style.transition = '1.5s cubic-bezier(1, 0, 0.58, 1)';
         }
         else{
             boxPortfolio.style.opacity = '0';
         }
     }
+    function scrollBoxProjet() {
+        if(window.scrollY >= 850 ){
+            boxProjet.style.opacity = '1';
+            boxProjet.style.transition = '2s cubic-bezier(1, 0, 0.58, 1)';
+        }
+        else{
+            boxProjet.style.opacity = '0';
+        }
+    }
 }
 
-
-
-//parallax portfolio
-// const boxPortfolio = document.getElementById('boxPortfolio');
-
-// window.addEventListener('onload', ()=>{
-
-//     boxPortfolio.style = window. * 2 + 'px';
-// });

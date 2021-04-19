@@ -1,7 +1,7 @@
 .accueil{
     width: 100%;
     height: 400vh;
-    background: linear-gradient(#3AE8C0, #00e1ff);
+    background: linear-gradient(#3AE8C0, #7692FF);
     overflow: hidden;
     .containerAccueil{
         width: 70%;
@@ -71,21 +71,30 @@
         margin: 10vh auto;
         #boxPortfolio{
             position: relative;
-            height: 80vh;
+            height: 95vh;
             display: flex;
-            background: rgb(255, 255, 255);
             align-items: center;
             .titlePortfolio{
-                padding-left: 5vw;
-                font-size: 10vw;
+                padding: 15vh 3vw;
+                font-size: 9vw;
                 font-family: oswald;
                 font-weight: 300;
                 text-transform: uppercase;
                 letter-spacing: -10px;
+                background: #00171F;
+                color: white;
+                position: relative;
+                left: 4vw;
+                z-index: 1;
             }
             .contentPortfolio{
-                padding: 0 5vw;
+                padding: 5vw 3vw 5vw 10vw;
                 font-family: oswald;
+                background: #003459;
+                color: white;
+                z-index: 0;
+                position: relative;
+                right: 3vw;
                 h3{
                     font-size: 3vw;
                     font-weight: 300;
@@ -93,6 +102,7 @@
                 }
                 p{
                     font-family: roboto;
+                    color: rgb(199, 199, 199);
                 }
             }
         }
@@ -100,6 +110,116 @@
     @media screen and (min-width:768px) and (max-width: 1024px){
         #boxPortfolio{
             flex-direction: column;
+        }
+    }
+    .containerProjet{
+        width: 90%;
+        margin: 10vh auto;
+        #boxProjet{
+            position: relative;
+            height: 192vh;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-start;
+            .titleProjet{
+                padding: 15vh 3vw;
+                font-size: 9vw;
+                font-family: oswald;
+                text-align: center;
+                line-height: 20vh;
+                font-weight: 300;
+                text-transform: uppercase;
+                letter-spacing: -10px;
+                background: #00171F;
+                color: white;
+                position: relative;
+                right: 3vw;
+                top: 20vh;
+                z-index: 1;
+            }
+            .contentProjet{
+                padding: 0vw 0vw 0vw 9vw;
+                width: 100%;
+                font-family: oswald;
+                background: #003459;
+                color: white;
+                z-index: 0;
+                position: relative;
+                left: 4vw;
+                .projets{
+                    width: 30vw;
+                    height: 50vh;
+                    margin: 5vh 0;
+                    transform-style: preserve-3d;
+                    transition: all 0.5s ease;
+                    .cardFace{
+                        position: absolute;
+                        width: 30vw;
+                        height: 90%;
+                        background: rgb(255, 255, 255);
+                        color: black;
+                        backface-visibility: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        h3{
+                            font-size: 1.75vw;
+                            font-weight: 500;
+                            margin: 2vh 0;
+                            text-transform: uppercase;
+                            text-align: center;
+                        }
+                    }
+                    .cardBack{
+                        position: absolute;
+                        width: 30vw;
+                        height: 90%;
+                        background: white;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        backface-visibility: hidden;
+                        transform: rotateY(180deg);
+                        img{
+                            width:100%;
+                        }
+                        .langage{
+                            margin: 2vh 0;
+                            display: flex;
+                            align-items: center;
+                            li{
+                                list-style-type: none;
+                                padding: 0 0.5vw;
+                                img{
+                                    width: 40px;
+                                }
+                            }
+                        }
+                        .btnVisite{
+                            background: #00171F;
+                            padding: 1vh 5vw;
+                            top: 3vh;
+                            text-decoration: none;
+                            color: white;
+                            text-transform: uppercase;
+                            width: 60%;
+                            margin: 1vh auto;
+                            text-align: center;
+                            cursor: pointer;
+                        }
+                    }
+                    &:hover{
+                        transform: rotateY(180deg);
+                    }
+                }
+            }
+            @media screen and (min-width:768px) and (max-width: 1024px){
+                
+            }
+            @media screen and (min-width:350px) and (max-width: 768px){
+                height: 150vh;
+            }
         }
     }
 }

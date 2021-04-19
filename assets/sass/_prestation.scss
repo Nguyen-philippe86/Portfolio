@@ -1,0 +1,173 @@
+.prestation{
+    width: 100%;
+    height: 230vh;
+    background: linear-gradient(#7692FF, #7647EA);
+    overflow: hidden;
+    .containerPrestation{
+        width: 90%;
+        margin: 5vh auto;
+        position: relative;
+        top: 13vh;
+        display: flex;
+        flex-direction: column;
+        #boxPrestation{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: oswald;
+            .titlePrestation{
+                font-size: 9vw;
+                font-family: oswald;
+                font-weight: 300;
+                text-transform: uppercase;
+                letter-spacing: -10px;
+                color: white;
+                position: relative;
+                @media screen and (min-width:768px) and (max-width: 1024px){
+                    font-size: 10vw;
+                }
+                @media screen and (min-width:350px) and (max-width: 768px){
+                    font-size: 10vw;
+                    letter-spacing: 0;
+                }
+            }
+            p{
+                font-size: 1.4vw;
+                text-align: center;
+                margin: 3vh 0;
+                span{
+                    letter-spacing: -2px;
+                    font-size: 2.5vw;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                }
+                @media screen and (min-width:768px) and (max-width: 1024px){
+                    font-size: 3vw;
+                    span{
+                        letter-spacing: 0;
+                    }
+                }
+                @media screen and (min-width:350px) and (max-width: 768px){
+                    font-size: 3vw;
+                    span{
+                        font-size: 3vw;
+                        letter-spacing: 0;
+                    }
+                }
+            }
+            .contentPrestation{
+                position: relative;
+                top: 10vh;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .services{
+                    width: 375px;
+                    margin: 10px;
+                    padding: 20px;
+                    background: white;
+                    display: flex;
+                    color: #00171F;
+                    flex-direction: column;
+                    align-items: center;
+                    i{
+                        font-size: 10vw;
+                        margin: 1vh auto;
+                        color: #00171F;
+                    }
+                    h4{
+                        margin: 1vh auto;
+                        text-transform: uppercase;
+                        font-size: 1.5vw;
+                        font-weight: 400;
+                    }
+                    p{
+                        font-family: roboto;
+                        font-size: 1vw;
+                        margin: 1vh auto;
+                        list-style-type: none;
+                    }
+                    &:hover{
+                        transform: scale(1.2);
+                        transition: all 0.5s ease-in-out;
+                        background: #00171F;
+                        color: white;
+                        i{
+                            color: white;
+                        }
+                    }
+                    @media screen and (min-width:768px) and (max-width: 1024px){
+                        width: 45%;
+                        i{
+                            font-size: 10vw;
+                        }
+                        h4{
+                            font-size: 2.5vw;
+                        }
+                        p{
+                            font-size: 2vw;
+                        }
+                    }
+                    @media screen and (min-width:350px) and (max-width: 768px){
+                        width: 90%;
+                        i{
+                            font-size: 20vw;
+                        }
+                        h4{
+                            font-size: 5vw;
+                        }
+                        p{
+                            font-size: 3vw;
+                        }
+                    }
+                }
+                @media screen and (min-width:350px) and (max-width: 768px){
+                    top: 5vh
+                }
+            }
+        }
+        #linkContact{
+            position: relative;
+            top: 25vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: oswald;
+            h4{
+                font-size: 3vw;
+                text-transform: uppercase;
+                color: white;
+                font-weight: 400;
+            }
+            .btnContact{
+                background: #00171F;
+                padding: 1vh 5vw;
+                top: 3vh;
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+                margin: 2vh auto;
+                text-align: center;
+                cursor: pointer;
+                &:hover{
+                    background: white;
+                    color: #00171F;
+                    transition: 1s;
+                }
+            }
+            @media screen and (min-width:768px) and (max-width: 1024px){
+                top: 15vh;
+            }
+            @media screen and (min-width:350px) and (max-width: 768px){
+                top: 10vh
+            }
+        }
+    }
+    @media screen and (min-width:768px) and (max-width: 1024px){
+        height: 175vh;
+    }
+    @media screen and (min-width:350px) and (max-width: 768px){
+        height: 300vh;
+    }
+}

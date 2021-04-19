@@ -1,11 +1,11 @@
 <header>
 
     <nav>
-        <a href="#" class="logo"><img src="assets/img/logo.png"></img></a>
+        <a href="index.php" class="logo"><img src="assets/img/logo.png"></img></a>
         <div class="openMenu"><i class="fa fa-bars"></i></div>
         <ul class="mainMenu">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Prestations</a></li>
+            <li><a href="index.php">Accueil</a></li>
+            <li><a href="prestation.php">Prestations</a></li>
             <li><a href="#">Contact</a></li>
             <div class="closeMenu"><i class="fa fa-times"></i></div>
             <li>
