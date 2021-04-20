@@ -92,6 +92,7 @@ require 'includes/header.php';
                             <li><img src="assets/img/mysql.png" alt=""></li>
                             <li><img src="assets/img/sass.png" alt=""></li>
                         </ul>
+                        <a class="btnVisite" href="https://my-cave.philippe-nguyen.com" target="_blank">Voir le site</a>
                     </div>
                 </div>
 

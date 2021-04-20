@@ -166,6 +166,7 @@ footer .containerFooter .contactInfo > i a:hover {
   display: flex;
   flex-direction: column;
   z-index: 0;
+  animation: transitionAccueil 2s;
 }
 .accueil .containerAccueil h1 {
   position: relative;
@@ -186,6 +187,16 @@ footer .containerFooter .contactInfo > i a:hover {
   text-transform: uppercase;
   color: white;
 }
+@keyframes transitionAccueil {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .accueil .containerAccueil {
     width: 70%;
@@ -198,7 +209,7 @@ footer .containerFooter .contactInfo > i a:hover {
     letter-spacing: -6px;
   }
   .accueil .containerAccueil h2 {
-    top: 32%;
+    top: 34%;
     font-size: 9vw;
     letter-spacing: -6px;
   }
@@ -243,6 +254,17 @@ footer .containerFooter .contactInfo > i a:hover {
   left: 4vw;
   z-index: 1;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .accueil .containerPortfolio #boxPortfolio .titlePortfolio {
+    letter-spacing: -5px;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  .accueil .containerPortfolio #boxPortfolio .titlePortfolio {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+}
 .accueil .containerPortfolio #boxPortfolio .contentPortfolio {
   padding: 5vw 3vw 5vw 10vw;
   font-family: oswald;
@@ -261,9 +283,22 @@ footer .containerFooter .contactInfo > i a:hover {
   font-family: roboto;
   color: #c7c7c7;
 }
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  .accueil .containerPortfolio #boxPortfolio .contentPortfolio h3 {
+    font-size: 5vw;
+  }
+  .accueil .containerPortfolio #boxPortfolio .contentPortfolio p {
+    font-size: 3vw;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .accueil #boxPortfolio {
-    flex-direction: column;
+  .accueil .containerPortfolio #boxPortfolio {
+    height: 40vh;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  .accueil .containerPortfolio #boxPortfolio {
+    height: 60vh;
   }
 }
 .accueil .containerProjet {
@@ -293,6 +328,22 @@ footer .containerFooter .contactInfo > i a:hover {
   top: 20vh;
   z-index: 1;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .accueil .containerProjet #boxProjet .titleProjet {
+    letter-spacing: -5px;
+    line-height: inherit;
+    top: 30vh;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  .accueil .containerProjet #boxProjet .titleProjet {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    padding: 10vh 0;
+    line-height: 12vh;
+    top: 5vh;
+  }
+}
 .accueil .containerProjet #boxProjet .contentProjet {
   padding: 0vw 0vw 0vw 9vw;
   width: 100%;
@@ -313,7 +364,7 @@ footer .containerFooter .contactInfo > i a:hover {
 .accueil .containerProjet #boxProjet .contentProjet .projets .cardFace {
   position: absolute;
   width: 30vw;
-  height: 90%;
+  height: 30vh;
   background: white;
   color: black;
   backface-visibility: hidden;
@@ -329,10 +380,36 @@ footer .containerFooter .contactInfo > i a:hover {
   text-transform: uppercase;
   text-align: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .accueil .containerProjet #boxProjet .contentProjet .projets .cardFace {
+    height: 30vh;
+  }
+  .accueil .containerProjet #boxProjet .contentProjet .projets .cardFace h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .accueil .containerProjet #boxProjet .contentProjet .projets .cardFace p {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  .accueil .containerProjet #boxProjet .contentProjet .projets .cardFace {
+    width: 45vw;
+  }
+  .accueil .containerProjet #boxProjet .contentProjet .projets .cardFace h3 {
+    font-size: 10px;
+    text-align: center;
+  }
+  .accueil .containerProjet #boxProjet .contentProjet .projets .cardFace p {
+    font-size: 12px;
+    text-align: center;
+  }
+}
 .accueil .containerProjet #boxProjet .contentProjet .projets .cardBack {
   position: absolute;
   width: 30vw;
-  height: 90%;
+  height: 30vh;
   background: white;
   display: flex;
   flex-direction: column;
@@ -367,12 +444,55 @@ footer .containerFooter .contactInfo > i a:hover {
   text-align: center;
   cursor: pointer;
 }
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  .accueil .containerProjet #boxProjet .contentProjet .projets .cardBack {
+    width: 45vw;
+  }
+  .accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .langage > li > img {
+    width: 25px;
+  }
+  .accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .btnVisite {
+    font-size: 10px;
+  }
+}
 .accueil .containerProjet #boxProjet .contentProjet .projets:hover {
   transform: rotateY(180deg);
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .accueil .containerProjet #boxProjet .contentProjet .projets {
+    height: 30vh;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  .accueil .containerProjet #boxProjet .contentProjet {
+    height: 110vh;
+    top: 10vh;
+  }
+  .accueil .containerProjet #boxProjet .contentProjet .projets {
+    height: 30vh;
+    width: 45vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .accueil .containerProjet #boxProjet {
+    top: 5vh;
+    height: 75vh;
+  }
+}
 @media screen and (min-width: 350px) and (max-width: 768px) {
   .accueil .containerProjet #boxProjet {
+    top: 10vh;
     height: 150vh;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .accueil {
+    height: 285vh;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  .accueil {
+    height: 320vh;
   }
 }
 
@@ -405,6 +525,7 @@ footer .containerFooter .contactInfo > i a:hover {
   letter-spacing: -10px;
   color: white;
   position: relative;
+  animation: transitionIn 2s;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .prestation .containerPrestation #boxPrestation .titlePrestation {
@@ -417,10 +538,20 @@ footer .containerFooter .contactInfo > i a:hover {
     letter-spacing: 0;
   }
 }
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .prestation .containerPrestation #boxPrestation p {
   font-size: 1.4vw;
   text-align: center;
-  margin: 3vh 0;
+  margin: 10vh 0;
 }
 .prestation .containerPrestation #boxPrestation p span {
   letter-spacing: -2px;
@@ -430,9 +561,10 @@ footer .containerFooter .contactInfo > i a:hover {
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .prestation .containerPrestation #boxPrestation p {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
   .prestation .containerPrestation #boxPrestation p span {
+    font-size: 3.5vw;
     letter-spacing: 0;
   }
 }
@@ -441,7 +573,7 @@ footer .containerFooter .contactInfo > i a:hover {
     font-size: 3vw;
   }
   .prestation .containerPrestation #boxPrestation p span {
-    font-size: 3vw;
+    font-size: 3.5vw;
     letter-spacing: 0;
   }
 }

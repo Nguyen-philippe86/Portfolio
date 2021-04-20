@@ -24,6 +24,7 @@
                 letter-spacing: -10px;
                 color: white;
                 position: relative;
+                animation: transitionIn 2s;
                 @media screen and (min-width:768px) and (max-width: 1024px){
                     font-size: 10vw;
                 }
@@ -31,11 +32,21 @@
                     font-size: 10vw;
                     letter-spacing: 0;
                 }
+                @keyframes transitionIn {
+                    from {
+                        opacity: 0;
+                        transform: translateY(-40px);
+                    }
+                    to{
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
             }
             p{
                 font-size: 1.4vw;
                 text-align: center;
-                margin: 3vh 0;
+                margin: 10vh 0;
                 span{
                     letter-spacing: -2px;
                     font-size: 2.5vw;
@@ -43,15 +54,16 @@
                     text-transform: uppercase;
                 }
                 @media screen and (min-width:768px) and (max-width: 1024px){
-                    font-size: 3vw;
+                    font-size: 2.5vw;
                     span{
+                        font-size: 3.5vw;
                         letter-spacing: 0;
                     }
                 }
                 @media screen and (min-width:350px) and (max-width: 768px){
                     font-size: 3vw;
                     span{
-                        font-size: 3vw;
+                        font-size: 3.5vw;
                         letter-spacing: 0;
                     }
                 }

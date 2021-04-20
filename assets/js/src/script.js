@@ -26,30 +26,49 @@ document.addEventListener('scroll',()=>{
 });
 
 //animation portfolio
-window.onload = function() {
-    const boxPortfolio = document.getElementById('boxPortfolio');
-    const boxProjet = document.getElementById('boxProjet');
+const boxPortfolio = document.getElementById('boxPortfolio');
+const boxProjet = document.getElementById('boxProjet');
 
-    window.addEventListener('scroll', scrollBoxPortfolio);
-    window.addEventListener('scroll', scrollBoxProjet);
+window.addEventListener('scroll', scrollBoxPortfolio);
+window.addEventListener('scroll', scrollBoxProjet);
 
-    function scrollBoxPortfolio() {
-        if(window.scrollY >= 300 ){
-            boxPortfolio.style.opacity = '1';
-            boxPortfolio.style.transition = '1.5s cubic-bezier(1, 0, 0.58, 1)';
-        }
-        else{
-            boxPortfolio.style.opacity = '0';
-        }
+function scrollBoxPortfolio() {
+    if(window.scrollY >= 300 ){
+        boxPortfolio.style.opacity = '1';
+        boxPortfolio.style.transform = 'translateX(0px)';
+        boxPortfolio.style.transition = '1.25s ease-in-out';
     }
-    function scrollBoxProjet() {
-        if(window.scrollY >= 850 ){
-            boxProjet.style.opacity = '1';
-            boxProjet.style.transition = '2s cubic-bezier(1, 0, 0.58, 1)';
-        }
-        else{
-            boxProjet.style.opacity = '0';
-        }
+    else{
+        boxPortfolio.style.opacity = '0';
+        boxPortfolio.style.transform = 'translateX(-50px)';
     }
 }
+scrollBoxPortfolio();
+function scrollBoxProjet() {
+    if(window.scrollY >= 850 ){
+        boxProjet.style.opacity = '1';
+        boxProjet.style.transform = 'translateX(0px)';
+        boxProjet.style.transition = '1.25s ease-in-out';
+    }
+    else{
+        boxProjet.style.opacity = '0';
+        boxProjet.style.transform = 'translateX(50px)';
+    }
+}
+scrollBoxProjet();
 
+//animation prestations
+const contentPrestation = document.querySelector('.contentPrestation');
+
+window.addEventListener('scroll', scrollContentPrestation);
+
+function scrollContentPrestation() {
+    if(window.scrollY >= 300 ){
+        contentPrestation.style.opacity = '1';
+        contentPrestation.style.transition = '1.25s ease-in-out';
+    }
+    else{
+        contentPrestation.style.opacity = '0';
+    }
+}
+scrollContentPrestation();
