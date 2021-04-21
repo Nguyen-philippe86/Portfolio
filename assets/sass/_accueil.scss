@@ -1,7 +1,8 @@
 .accueil{
     width: 100%;
     height: 400vh;
-    background: linear-gradient(#3AE8C0, #7692FF);
+    // background: linear-gradient(#3AE8C0, #7692FF);
+    background: lightgrey;
     overflow: hidden;
     .containerAccueil{
         width: 70%;
@@ -21,6 +22,7 @@
             font-size: 10vw;
             letter-spacing: -10px;
             text-transform: uppercase;
+            color: #333333;
         }
         h2{
             position: relative;
@@ -30,7 +32,7 @@
             font-size: 8vw;
             letter-spacing: -6px;
             text-transform: uppercase;
-            color: white;
+            color: #48E5C2;
         }
         @keyframes transitionAccueil {
             from {
@@ -134,7 +136,7 @@
         }
         @media screen and (min-width:768px) and (max-width: 1024px){
             #boxPortfolio{
-                height: 40vh;
+                height: 45vh;
             }
         }
         @media screen and (min-width:350px) and (max-width: 768px){
@@ -198,7 +200,7 @@
                     .cardFace{
                         position: absolute;
                         width: 30vw;
-                        height: 30vh;
+                        height: 50vh;
                         background: rgb(255, 255, 255);
                         color: black;
                         backface-visibility: hidden;
@@ -230,12 +232,13 @@
                     @media screen and (min-width:350px) and (max-width: 768px){
                         .cardFace{
                             width: 45vw;
+                            height: 30vh;
                             h3{
                                 font-size: 10px;
                                 text-align: center;
                             }
                             p{
-                                font-size: 12px;
+                                font-size: 10px;
                                 text-align: center;
                             }
                         }

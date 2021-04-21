@@ -1,6 +1,6 @@
 .prestation{
     width: 100%;
-    height: 230vh;
+    height: 240vh;
     background: linear-gradient(#7692FF, #7647EA);
     overflow: hidden;
     .containerPrestation{
@@ -46,13 +46,7 @@
             p{
                 font-size: 1.4vw;
                 text-align: center;
-                margin: 10vh 0;
-                span{
-                    letter-spacing: -2px;
-                    font-size: 2.5vw;
-                    font-weight: 400;
-                    text-transform: uppercase;
-                }
+                margin: 5vh 0;
                 @media screen and (min-width:768px) and (max-width: 1024px){
                     font-size: 2.5vw;
                     span{
@@ -68,12 +62,48 @@
                     }
                 }
             }
+            h3{
+                margin-top: 8vh;
+                letter-spacing: -2px;
+                font-size: 2.5vw;
+                font-weight: 400;
+                text-transform: uppercase;
+                opacity: 0;
+            }
+            @media screen and (min-width:768px) and (max-width: 1024px){
+                h3{
+                    font-size: 4vw;
+                    text-align: center;
+                    letter-spacing: 0;
+                }
+            }
+            @media screen and (min-width:350px) and (max-width: 768px){
+                h3{
+                    font-size: 4vw;
+                    text-align: center;
+                    letter-spacing: 0;
+                }
+            }
+            .clignote{
+                font-size: 2.5vw;
+                margin-top: 2vh;
+                animation: clignote 2s linear infinite;
+            }
+            @keyframes clignote{
+                50% { opacity: 0; }
+            }
+            @media screen and (min-width:350px) and (max-width: 768px){
+                .clignote{
+                    font-size: 5vw;
+                }
+            }
             .contentPrestation{
                 position: relative;
                 top: 10vh;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
+                opacity: 0;
                 .services{
                     width: 375px;
                     margin: 10px;
@@ -177,9 +207,9 @@
         }
     }
     @media screen and (min-width:768px) and (max-width: 1024px){
-        height: 175vh;
+        height: 190vh;
     }
     @media screen and (min-width:350px) and (max-width: 768px){
-        height: 300vh;
+        height: 315vh;
     }
 }

@@ -1,0 +1,85 @@
+.containerContact{
+    width: 100%;
+    height: 150vh;    
+    background-color: aqua;
+    #boxContact{
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        top: 18vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: oswald;
+        h2{
+            font-size: 9vw;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: -10px;
+            color: white;
+            position: relative;
+            animation: transitionIn 2s;
+        }
+        @keyframes transitionIn {
+            from {
+                opacity: 0;
+                transform: translateY(-40px);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .containerBox{
+            display: flex;
+            width: 100%;
+            margin: auto;
+            #boxInfo {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-left: 10vw;
+                h3{
+                    font-size: 2vw;
+                    font-weight: 400;
+                    padding: 5vh 0;
+                    text-transform: uppercase;
+                }
+                .logoInfo{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                .logoSocial{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                }
+            }
+            #boxForm{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-right: 10vw;
+                h3{
+                    font-size: 2vw;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    padding: 5vh 0;
+                }
+                form{
+                    width: 90%;
+                    .btnForm > input{
+                        padding: 1vh 5vw;
+                        background: black;
+                        color: white;
+                        border: 1px solid black;
+                    }
+                }
+            }    
+        }
+    }
+}

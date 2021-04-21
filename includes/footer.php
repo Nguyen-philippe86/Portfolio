@@ -10,6 +10,7 @@
         </div>
     </div>
 </footer>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 <script type="text/javascript" src="assets/js/src/script.js"></script>
 </body>
 
