@@ -52,23 +52,6 @@ document.addEventListener('scroll',()=>{
     }
 });
 
-//**********animation projet réalisé**********
-// const boxProjet = document.getElementById('boxProjet');
-
-// document.addEventListener('scroll',()=>{
-//     let value = window.scrollY;
-
-//     if(value >= 850){
-//         boxProjet.style.opacity = '1';
-//         boxProjet.style.transform = 'translateX(0px)';
-//         boxProjet.style.transition = '1.25s ease-in-out';
-//     }
-//     else{
-//         boxProjet.style.opacity = '0';
-//         boxProjet.style.transform = 'translateX(50px)';
-//     }
-// });
-
 //**********animation prestations**********
 const contentPrestation = document.querySelector('.contentPrestation');
 
@@ -86,16 +69,30 @@ document.addEventListener('scroll', () =>{
     }
 });
 
-//**********Animation lettre**********
+//**********animation lettre**********
 const txtAnim = document.querySelector('.textAnim');
 
-txtAnim.style.opacity = '1';
+txtAnim.style.opacity = '1'
 new Typewriter(txtAnim, {
 })
-.changeDelay(75)
-.typeString('Vous avez un projet ou une idée en tête ?')
-.pauseFor(300)
-.typeString(' Demander un devis,')
-.pauseFor(300)
-.typeString('<strong> c\'est gratuit !</strong>')
-.start()
+    .changeDelay(75)
+    .typeString('Vous avez un projet ou une idée en tête ?')
+    .pauseFor(300)
+    .typeString(' Demander un devis,')
+    .pauseFor(300)
+    .typeString('<strong style = "color: # FE4A49;"> c\'est gratuit !</strong>')
+    .start();
+
+//**********animation contact prestation**********
+const linkContact = document.getElementById('linkContact');
+
+document = addEventListener('scroll', () =>{
+    let value = window.scrollY;
+
+    if(value >= 900){
+        linkContact.style.transform = 'scale(1)';
+        linkContact.style.transition = '1.5s ease';
+    }else{
+        linkContact.style.transform = 'scale(0.25)';
+    }
+})

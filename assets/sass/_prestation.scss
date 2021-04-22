@@ -1,7 +1,7 @@
 .prestation{
     width: 100%;
     height: 240vh;
-    background: linear-gradient(#7692FF, #7647EA);
+    background: $mintCream;
     overflow: hidden;
     .containerPrestation{
         width: 90%;
@@ -16,21 +16,23 @@
             flex-direction: column;
             align-items: center;
             font-family: oswald;
+            color: $rifleGreen;
             .titlePrestation{
                 font-size: 9vw;
                 font-family: oswald;
                 font-weight: 300;
                 text-transform: uppercase;
                 letter-spacing: -10px;
-                color: white;
+                color: $tartOrange;
                 position: relative;
                 animation: transitionIn 2s;
                 @media screen and (min-width:768px) and (max-width: 1024px){
                     font-size: 10vw;
                 }
                 @media screen and (min-width:350px) and (max-width: 768px){
-                    font-size: 10vw;
+                    font-size: 12vw;
                     letter-spacing: 0;
+                    margin: 5vh 0;
                 }
                 @keyframes transitionIn {
                     from {
@@ -44,9 +46,9 @@
                 }
             }
             p{
-                font-size: 1.4vw;
+                font-size: 1.5vw;
                 text-align: center;
-                margin: 5vh 0;
+                margin: 10vh 0;
                 @media screen and (min-width:768px) and (max-width: 1024px){
                     font-size: 2.5vw;
                     span{
@@ -55,7 +57,7 @@
                     }
                 }
                 @media screen and (min-width:350px) and (max-width: 768px){
-                    font-size: 3vw;
+                    font-size: 4vw;
                     span{
                         font-size: 3.5vw;
                         letter-spacing: 0;
@@ -79,15 +81,10 @@
             }
             @media screen and (min-width:350px) and (max-width: 768px){
                 h3{
-                    font-size: 4vw;
+                    font-size: 5vw;
                     text-align: center;
                     letter-spacing: 0;
                 }
-            }
-            .clignote{
-                font-size: 2.5vw;
-                margin-top: 2vh;
-                animation: clignote 2s linear infinite;
             }
             @keyframes clignote{
                 50% { opacity: 0; }
@@ -108,15 +105,15 @@
                     width: 375px;
                     margin: 10px;
                     padding: 20px;
-                    background: white;
+                    background: $rifleGreen;
                     display: flex;
-                    color: #00171F;
+                    color: $mintCream;
                     flex-direction: column;
                     align-items: center;
                     i{
                         font-size: 10vw;
                         margin: 1vh auto;
-                        color: #00171F;
+                        color: $mintCream;
                     }
                     h4{
                         margin: 1vh auto;
@@ -133,10 +130,11 @@
                     &:hover{
                         transform: scale(1.2);
                         transition: all 0.5s ease-in-out;
-                        background: #00171F;
-                        color: white;
+                        background: $mintCream;
+                        color: $rifleGreen;
+                        border: 1px solid $rifleGreen;
                         i{
-                            color: white;
+                            color: $rifleGreen;
                         }
                     }
                     @media screen and (min-width:768px) and (max-width: 1024px){
@@ -164,6 +162,11 @@
                         }
                     }
                 }
+                @media screen and (min-width: 1025px){
+                    .services{
+                        width: 450px;
+                    }
+                }
                 @media screen and (min-width:350px) and (max-width: 768px){
                     top: 5vh
                 }
@@ -179,22 +182,23 @@
             h4{
                 font-size: 3vw;
                 text-transform: uppercase;
-                color: white;
+                color: $rifleGreen;
                 font-weight: 400;
             }
             .btnContact{
-                background: #00171F;
+                background: $tartOrange;
                 padding: 1vh 5vw;
                 top: 3vh;
                 text-decoration: none;
-                color: white;
+                color: $mintCream;
                 text-transform: uppercase;
                 margin: 2vh auto;
                 text-align: center;
                 cursor: pointer;
                 &:hover{
-                    background: white;
-                    color: #00171F;
+                    background: $mintCream;
+                    color: $tartOrange;
+                    border: 1px solid $tartOrange;
                     transition: 1s;
                 }
             }
@@ -210,6 +214,6 @@
         height: 190vh;
     }
     @media screen and (min-width:350px) and (max-width: 768px){
-        height: 315vh;
+        height: 340vh;
     }
 }

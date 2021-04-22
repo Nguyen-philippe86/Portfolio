@@ -9,8 +9,10 @@
             <li><a href="contact.php">Contact</a></li>
             <div class="closeMenu"><i class="fa fa-times"></i></div>
             <li>
-                <a href="#" class="social"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="social"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/philippe-nguyen-web-dev/" class="social" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Nguyen-philippe86" class="social" target="_blank"><i
+                        class="fab fa-github-square"></i></a>
             </li>
         </ul>
     </nav>

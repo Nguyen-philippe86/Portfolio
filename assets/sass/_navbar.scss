@@ -34,14 +34,13 @@ header{
                 a{
                     text-decoration: none;
                     display: inline-block;
-                    color: black;
-                    font-size: 15px;
-                    font-weight: semi-bold;
+                    color: $rifleGreen;
+                    font-size: 17px;
                     &:hover{
-                        transform: scale(1.15);
+                        transform: scale(1.2);
                         transition: all 0.35s ease-in-out;
                         z-index: 1;
-                        color: white;
+                        color: $tartOrange;
                     }
                 }
                 .social{
@@ -81,13 +80,13 @@ header{
             background-color: rgba(0, 0, 0, 0.9);
             transition: top 1s ease-in-out;
             display: none;
-            color: #3AE8C0;
+            color: $tartOrange;
             li{
                 a{
                     padding: 10px 10px;
                     font-size: 30px;
                     font-weight: 300;
-                    color: white;
+                    color: $mintCream;
                 }
                 .social{
                     padding-top: 30px;
@@ -105,7 +104,7 @@ header{
         }
         nav .mainMenu li a:hover{
             background: none;
-            color: #3AE8C0;
+            color: $tartOrange;
             font-size: 1,5rem;
         }
     }

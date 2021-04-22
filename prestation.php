@@ -10,8 +10,9 @@
                 pour vous un site web personnalisé, facile d’utilisation, évolutif et fonctionnel ! Avoir un site web
                 vous permet de présenter votre entreprise et son activité.
             </p>
-            <h3 class="textAnim">Vous avez un projet ou une idée en tête ? Demander un devis, c'est gratuit !</h3>
-            <h4 class="clignote"><i class="fas fa-arrow-down"></i></h4>
+            <h3 class="textAnim">Vous avez un projet ou une idée en tête ? Demander un devis,
+                c'est gratuit !</h3>
+            <!-- <h4 class="clignote"><i class="fas fa-arrow-down"></i></h4> -->
 
             <div class="contentPrestation">
 
@@ -65,7 +66,7 @@
             </div>
         </div>
         <div id="linkContact">
-            <h4>Alors convaincu ? Contactez moi !</h4>
+            <h4>Convaincu ? Contactez moi !</h4>
             <a class="btnContact" href="contact.php">Me contacter</a>
         </div>
     </section>

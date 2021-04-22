@@ -1,7 +1,7 @@
 .containerContact{
     width: 100%;
     height: 150vh;    
-    background-color: aqua;
+    background-color: $mintCream;
     #boxContact{
         width: 90%;
         margin: 0 auto;
@@ -17,7 +17,7 @@
             font-weight: 300;
             text-transform: uppercase;
             letter-spacing: -10px;
-            color: white;
+            color: $tartOrange;
             position: relative;
             animation: transitionIn 2s;
         }
@@ -31,55 +31,210 @@
                 transform: translateY(0);
             }
         }
+        @media (min-width: 350px) and (max-width: 768px){
+            h2{
+                font-size: 12vw;
+                letter-spacing: -3px;
+                margin: 5vh 0;
+            }
+        }
         .containerBox{
             display: flex;
-            width: 100%;
+            width: 90%;
             margin: auto;
+            position: relative;
+            top: 15vh;
+            animation: fadeIn 2s;
             #boxInfo {
                 width: 50%;
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
-                margin-left: 10vw;
+                align-items: center;
+                justify-content: center;
+                background: #6A7062;
+                position: relative;
+                height: 60vh;
+                top: 7vh;
+                left: 5vw;
+                z-index: 2;
+                color: #F4FFF8;
                 h3{
                     font-size: 2vw;
                     font-weight: 400;
-                    padding: 5vh 0;
                     text-transform: uppercase;
+                    padding: 0 0 5vh 0;
                 }
                 .logoInfo{
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
+                    i {
+                        font-size: 2vw;
+                        display: flex;
+                        padding: 2vh 0;
+                        a{
+                            font-family: oswald;
+                            font-size: 1.5vw;
+                            font-weight: 400;
+                            padding: 0 1vw;
+                            text-decoration: none;
+                            color: $mintCream;
+                            &:hover{
+                                color: $tartOrange;
+                            }
+                        }
+                    }
                 }
                 .logoSocial{
                     display: flex;
                     flex-direction: row;
                     align-items: flex-start;
+                    padding: 5vh 0;
+                    a > i{
+                        font-size: 3vw;
+                        color: $mintCream;
+                        padding-right: 2vh;
+                        &:hover{
+                            color: $tartOrange;
+                            transition: 0.4s ease-in-out;
+                        }
+                    }
+                }
+            }
+            @media (min-width: 350px) and (max-width: 768px){
+                #boxInfo{
+                    height: 40vh;
+                    top: 0;
+                    width: 100%;
+                    left: 0;
+                    margin-bottom: 1vh;
+                    z-index: 0;
+                    h3{
+                        font-size: 8vw;
+                        padding: 2vh 0;
+                    }
+                    .logoInfo > i{
+                        font-size: 5vw;
+                        a{
+                            font-size: 5vw;
+                        }
+                    }
+                    .logoSocial > a > i{
+                        font-size: 10vw;
+                    }
                 }
             }
             #boxForm{
-                width: 50%;
+                width: 100%;
+                height: 75vh;
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
-                margin-right: 10vw;
+                align-items: center;
+                position: relative;
+                right: 5vw;
+                padding: 5% 5% 0 15%;
+                background: #3E442B;
                 h3{
                     font-size: 2vw;
                     font-weight: 400;
                     text-transform: uppercase;
-                    padding: 5vh 0;
+                    padding: 0 0 5vh 0;
+                    color: $mintCream;
                 }
                 form{
                     width: 90%;
-                    .btnForm > input{
-                        padding: 1vh 5vw;
-                        background: black;
-                        color: white;
-                        border: 1px solid black;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .areaZone > textarea{
+                        resize: none;
+                        height: 20vh;
+                    }
+                    .btnForm {
+                        padding: 2vh 0;
+                    input{
+                            padding: 1vh 5vw;
+                            background: $tartOrange;
+                            color: #FCFFFC;
+                            border: 1px solid $tartOrange;
+                            text-transform: uppercase;
+                            &:hover{
+                                background: #FCFFFC;
+                                color: $tartOrange;
+                                border: 1px solid $tartOrange;
+                                transition: 0.4s ease-in-out;
+                            }
+                        }
                     }
                 }
             }    
+            @media (min-width: 350px) and (max-width: 768px){
+                #boxForm{
+                    margin-top: 1vh;
+                    padding: 0;
+                    height: 70vh;
+                    right: 0;
+                    h3{
+                        padding: 2vh 0;
+                        font-size: 8vw;
+                    }
+                }
+            }
         }
+        @keyframes fadeIn {
+            from{
+                transform: scale(0.25);
+            }
+            to{
+                transform: scale(1);
+            }
+        }
+        @media screen and (min-width:350px) and (max-width: 768px){
+            .containerBox{
+                display: flex;
+                flex-direction: column;
+                top: 5vh;
+            }
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        #boxContact{
+            width: 100%;
+            .containerBox{
+                width: 100%;
+                #boxInfo{
+                    height: 40vh;
+                    h3{
+                        font-size: 4vw;
+                    }
+                    .logoInfo > i{
+                        font-size: 2vw;
+                        a{
+                            font-size: 2vw;
+                        }
+                    }
+                    .logoSocial > a > i{
+                        font-size: 5vw;
+                        padding: 0 1vw 0 1vw;
+                    }
+                }
+                #boxForm{
+                    height: 55vh;
+                    h3{
+                        font-size: 4vw;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .containerContact{
+        height: 110vh;
+    }
+}
+@media screen and (min-width:350px) and (max-width: 768px){
+    .containerContact{
+        height: 160vh;
     }
 }
