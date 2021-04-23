@@ -15,22 +15,23 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-family: oswald;
+            font-family: 'roboto';
             color: $rifleGreen;
             .titlePrestation{
                 font-size: 9vw;
-                font-family: oswald;
+                font-family: 'roboto';
                 font-weight: 300;
                 text-transform: uppercase;
                 letter-spacing: -10px;
                 color: $tartOrange;
                 position: relative;
                 animation: transitionIn 2s;
-                @media screen and (min-width:768px) and (max-width: 1024px){
+                @media screen and (min-width:768px) and (max-width: 1023px){
                     font-size: 10vw;
                 }
-                @media screen and (min-width:350px) and (max-width: 768px){
+                @media screen and (min-width:350px) and (max-width: 767px){
                     font-size: 12vw;
+                    font-weight: 400;
                     letter-spacing: 0;
                     margin: 5vh 0;
                 }
@@ -49,14 +50,14 @@
                 font-size: 1.5vw;
                 text-align: center;
                 margin: 10vh 0;
-                @media screen and (min-width:768px) and (max-width: 1024px){
+                @media screen and (min-width:768px) and (max-width: 1023px){
                     font-size: 2.5vw;
                     span{
                         font-size: 3.5vw;
                         letter-spacing: 0;
                     }
                 }
-                @media screen and (min-width:350px) and (max-width: 768px){
+                @media screen and (min-width:350px) and (max-width: 767px){
                     font-size: 4vw;
                     span{
                         font-size: 3.5vw;
@@ -69,17 +70,21 @@
                 letter-spacing: -2px;
                 font-size: 2.5vw;
                 font-weight: 400;
+                text-align: center;
                 text-transform: uppercase;
                 opacity: 0;
             }
-            @media screen and (min-width:768px) and (max-width: 1024px){
+            @media screen and (min-width:1024px) and (max-width: 1919px){
+                font-size: 5vw;
+            }
+            @media screen and (min-width:768px) and (max-width: 1023px){
                 h3{
                     font-size: 4vw;
                     text-align: center;
                     letter-spacing: 0;
                 }
             }
-            @media screen and (min-width:350px) and (max-width: 768px){
+            @media screen and (min-width:350px) and (max-width: 767px){
                 h3{
                     font-size: 5vw;
                     text-align: center;
@@ -89,7 +94,7 @@
             @keyframes clignote{
                 50% { opacity: 0; }
             }
-            @media screen and (min-width:350px) and (max-width: 768px){
+            @media screen and (min-width:350px) and (max-width: 767px){
                 .clignote{
                     font-size: 5vw;
                 }
@@ -120,6 +125,7 @@
                         text-transform: uppercase;
                         font-size: 1.5vw;
                         font-weight: 400;
+                        text-align: center;
                     }
                     p{
                         font-family: roboto;
@@ -137,7 +143,7 @@
                             color: $rifleGreen;
                         }
                     }
-                    @media screen and (min-width:768px) and (max-width: 1024px){
+                    @media screen and (min-width:768px) and (max-width: 1023px){
                         width: 45%;
                         i{
                             font-size: 10vw;
@@ -149,7 +155,7 @@
                             font-size: 2vw;
                         }
                     }
-                    @media screen and (min-width:350px) and (max-width: 768px){
+                    @media screen and (min-width:350px) and (max-width: 767px){
                         width: 90%;
                         i{
                             font-size: 20vw;
@@ -162,12 +168,12 @@
                         }
                     }
                 }
-                @media screen and (min-width: 1025px){
+                @media screen and (min-width: 1024px){
                     .services{
                         width: 450px;
                     }
                 }
-                @media screen and (min-width:350px) and (max-width: 768px){
+                @media screen and (min-width:350px) and (max-width: 767px){
                     top: 5vh
                 }
             }
@@ -178,7 +184,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-family: oswald;
+            font-family: 'roboto';
             h4{
                 font-size: 3vw;
                 text-transform: uppercase;
@@ -202,18 +208,25 @@
                     transition: 1s;
                 }
             }
-            @media screen and (min-width:768px) and (max-width: 1024px){
+            @media screen and (min-width:768px) and (max-width: 1023px){
                 top: 15vh;
             }
-            @media screen and (min-width:350px) and (max-width: 768px){
-                top: 10vh
+            @media screen and (min-width:350px) and (max-width: 767px){
+                top: 10vh;
+                h4{
+                    font-size: 5vw;
+                    font-weight: 400;
+                }
             }
         }
     }
-    @media screen and (min-width:768px) and (max-width: 1024px){
-        height: 190vh;
+    @media screen and (min-width:1024px) and (max-width: 1919px){
+        height: 290vh;
     }
-    @media screen and (min-width:350px) and (max-width: 768px){
-        height: 340vh;
+    @media screen and (min-width:768px) and (max-width: 1023px){
+        height: 200vh;
+    }
+    @media screen and (min-width:350px) and (max-width: 767px){
+        height: 355vh;
     }
 }

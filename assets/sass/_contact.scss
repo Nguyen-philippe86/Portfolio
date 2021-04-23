@@ -11,7 +11,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-family: oswald;
+        font-family: 'roboto';
         h2{
             font-size: 9vw;
             font-weight: 300;
@@ -31,9 +31,15 @@
                 transform: translateY(0);
             }
         }
-        @media (min-width: 350px) and (max-width: 768px){
+        @media screen and (min-width:750px) and (max-width: 1000px){
+            h2{
+                font-size: 10vw;
+            }
+        }
+        @media (min-width: 350px) and (max-width: 750px){
             h2{
                 font-size: 12vw;
+                font-weight: 400;
                 letter-spacing: -3px;
                 margin: 5vh 0;
             }
@@ -68,13 +74,14 @@
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
+                    padding: 0 0 0 2vw;
                     i {
-                        font-size: 2vw;
+                        font-size: 1.5vw;
                         display: flex;
                         padding: 2vh 0;
                         a{
-                            font-family: oswald;
-                            font-size: 1.5vw;
+                            font-family: 'roboto';
+                            font-size: 1.25vw;
                             font-weight: 400;
                             padding: 0 1vw;
                             text-decoration: none;
@@ -101,7 +108,7 @@
                     }
                 }
             }
-            @media (min-width: 350px) and (max-width: 768px){
+            @media (min-width: 350px) and (max-width: 750px){
                 #boxInfo{
                     height: 40vh;
                     top: 0;
@@ -110,13 +117,13 @@
                     margin-bottom: 1vh;
                     z-index: 0;
                     h3{
-                        font-size: 8vw;
+                        font-size: 6vw;
                         padding: 2vh 0;
                     }
                     .logoInfo > i{
-                        font-size: 5vw;
+                        font-size: 4vw;
                         a{
-                            font-size: 5vw;
+                            font-size: 4vw;
                         }
                     }
                     .logoSocial > a > i{
@@ -176,7 +183,7 @@
                     right: 0;
                     h3{
                         padding: 2vh 0;
-                        font-size: 8vw;
+                        font-size: 6vw;
                     }
                 }
             }
@@ -197,15 +204,21 @@
             }
         }
     }
-    @media screen and (min-width: 768px) and (max-width: 1024px){
+    @media screen and (min-width: 750px) and (max-width: 1000px){
         #boxContact{
             width: 100%;
             .containerBox{
                 width: 100%;
                 #boxInfo{
-                    height: 40vh;
+                    width: 90%;
+                    height: 30vh;
+                    top: 0;
+                    z-index: 0;
+                    left: 50%;
+                    transform: translate(-50%);
                     h3{
                         font-size: 4vw;
+                        padding: 0;
                     }
                     .logoInfo > i{
                         font-size: 2vw;
@@ -213,12 +226,18 @@
                             font-size: 2vw;
                         }
                     }
-                    .logoSocial > a > i{
-                        font-size: 5vw;
-                        padding: 0 1vw 0 1vw;
+                    .logoSocial{
+                        margin: 0;
+                        padding: 2vh 0;
+                        a > i{
+                            font-size: 5vw;
+                            padding: 0 1vw 0 1vw;
+                        }
                     }
                 }
                 #boxForm{
+                    width: 90%;
+                    margin: 2vh auto;
                     height: 55vh;
                     h3{
                         font-size: 4vw;
@@ -228,12 +247,12 @@
         }
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px){
+@media screen and (min-width: 750px) and (max-width: 1000px){
     .containerContact{
-        height: 110vh;
+        height: 125vh;
     }
 }
-@media screen and (min-width:350px) and (max-width: 768px){
+@media screen and (min-width:350px) and (max-width: 750px){
     .containerContact{
         height: 160vh;
     }

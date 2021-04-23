@@ -29,7 +29,7 @@ header nav .logo img {
 }
 header nav .mainMenu {
   display: flex;
-  font-family: oswald;
+  font-family: "roboto";
 }
 header nav .mainMenu li {
   list-style: none;
@@ -121,7 +121,7 @@ footer .containerFooter {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: oswald;
+  font-family: "roboto";
   font-size: 12px;
   color: white;
 }
@@ -132,11 +132,16 @@ footer .containerFooter .contactInfo > i a {
   text-decoration: none;
   color: white;
   font-size: 13px;
-  font-family: oswald;
+  font-family: "roboto";
   font-weight: 400;
 }
 footer .containerFooter .contactInfo > i a:hover {
   color: #FE4A49;
+}
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  footer .containerFooter .contactInfo > i a {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 950px) {
   footer .containerFooter {
@@ -170,20 +175,20 @@ footer .containerFooter .contactInfo > i a:hover {
 .accueil .containerAccueil h1 {
   position: relative;
   top: 60%;
-  font-family: oswald;
+  font-family: "roboto";
   font-weight: 400;
-  font-size: 10vw;
-  letter-spacing: -10px;
+  font-size: 8vw;
+  letter-spacing: -15px;
   text-transform: uppercase;
   color: #FE4A49;
 }
 .accueil .containerAccueil h2 {
   position: relative;
-  top: 50%;
-  font-family: oswald;
+  top: 51%;
+  font-family: "roboto";
   font-weight: 400;
   font-size: 8vw;
-  letter-spacing: -6px;
+  letter-spacing: -15px;
   text-transform: uppercase;
   color: #6A7062;
 }
@@ -197,7 +202,12 @@ footer .containerFooter .contactInfo > i a:hover {
     transform: translateY(0);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  .accueil .containerAccueil > h2 {
+    top: 48%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .accueil .containerAccueil {
     width: 70%;
     display: flex;
@@ -205,16 +215,16 @@ footer .containerFooter .contactInfo > i a:hover {
   }
   .accueil .containerAccueil h1 {
     top: 40%;
-    font-size: 10vw;
+    font-size: 8vw;
     letter-spacing: -6px;
   }
   .accueil .containerAccueil h2 {
     top: 35%;
-    font-size: 9vw;
+    font-size: 8vw;
     letter-spacing: -6px;
   }
 }
-@media screen and (min-width: 350px) and (max-width: 768px) {
+@media screen and (min-width: 350px) and (max-width: 767px) {
   .accueil .containerAccueil {
     width: 90%;
     height: 112vh;
@@ -223,12 +233,12 @@ footer .containerFooter .contactInfo > i a:hover {
   }
   .accueil .containerAccueil h1 {
     top: 35%;
-    font-size: 13vw;
+    font-size: 10vw;
     letter-spacing: -3px;
   }
   .accueil .containerAccueil h2 {
     top: 29%;
-    font-size: 13vw;
+    font-size: 10vw;
     letter-spacing: -3px;
   }
 }
@@ -244,8 +254,8 @@ footer .containerFooter .contactInfo > i a:hover {
 }
 .accueil .containerPortfolio #boxPortfolio .titlePortfolio {
   padding: 15vh 3vw;
-  font-size: 9vw;
-  font-family: oswald;
+  font-size: 7vw;
+  font-family: "roboto";
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: -10px;
@@ -255,20 +265,21 @@ footer .containerFooter .contactInfo > i a:hover {
   left: 4vw;
   z-index: 1;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 767px) and (max-width: 1023px) {
   .accueil .containerPortfolio #boxPortfolio .titlePortfolio {
     letter-spacing: -5px;
   }
 }
-@media screen and (min-width: 350px) and (max-width: 768px) {
+@media screen and (min-width: 350px) and (max-width: 767px) {
   .accueil .containerPortfolio #boxPortfolio .titlePortfolio {
     writing-mode: vertical-rl;
     text-orientation: upright;
+    letter-spacing: 0;
   }
 }
 .accueil .containerPortfolio #boxPortfolio .contentPortfolio {
   padding: 5vw 3vw 5vw 10vw;
-  font-family: oswald;
+  font-family: "roboto";
   background: #6A7062;
   color: white;
   z-index: 0;
@@ -284,7 +295,7 @@ footer .containerFooter .contactInfo > i a:hover {
   font-family: roboto;
   color: #F4FFF8;
 }
-@media screen and (min-width: 350px) and (max-width: 768px) {
+@media screen and (min-width: 350px) and (max-width: 767px) {
   .accueil .containerPortfolio #boxPortfolio .contentPortfolio h3 {
     font-size: 5vw;
   }
@@ -292,12 +303,17 @@ footer .containerFooter .contactInfo > i a:hover {
     font-size: 3vw;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
   .accueil .containerPortfolio #boxPortfolio {
-    height: 55vh;
+    height: 100vh;
   }
 }
-@media screen and (min-width: 350px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .accueil .containerPortfolio #boxPortfolio {
+    height: 85vh;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 767px) {
   .accueil .containerPortfolio #boxPortfolio {
     height: 60vh;
   }
@@ -315,8 +331,8 @@ footer .containerFooter .contactInfo > i a:hover {
 }
 .accueil .containerProjet #boxProjet .titleProjet {
   padding: 15vh 3vw;
-  font-size: 9vw;
-  font-family: oswald;
+  font-size: 7vw;
+  font-family: "roboto";
   text-align: center;
   line-height: 20vh;
   font-weight: 300;
@@ -329,26 +345,27 @@ footer .containerFooter .contactInfo > i a:hover {
   top: 20vh;
   z-index: 1;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 750px) and (max-width: 1000px) {
   .accueil .containerProjet #boxProjet .titleProjet {
     letter-spacing: -5px;
     line-height: inherit;
     top: 30vh;
   }
 }
-@media screen and (min-width: 350px) and (max-width: 768px) {
+@media screen and (min-width: 350px) and (max-width: 750px) {
   .accueil .containerProjet #boxProjet .titleProjet {
     writing-mode: vertical-rl;
     text-orientation: upright;
+    letter-spacing: 0;
     padding: 10vh 0;
     line-height: 12vh;
-    top: 5vh;
+    top: 16vh;
   }
 }
 .accueil .containerProjet #boxProjet .contentProjet {
   padding: 0vw 0vw 0vw 9vw;
   width: 100%;
-  font-family: oswald;
+  font-family: "roboto";
   background: #6A7062;
   color: #F4FFF8;
   z-index: 0;
@@ -375,26 +392,26 @@ footer .containerFooter .contactInfo > i a:hover {
   align-items: center;
 }
 .accueil .containerProjet #boxProjet .contentProjet .projets .cardFace h3 {
-  font-size: 1.75vw;
+  font-size: 1.5vw;
   font-weight: 500;
   margin: 2vh 0;
   text-transform: uppercase;
   text-align: center;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 750px) and (max-width: 1000px) {
   .accueil .containerProjet #boxProjet .contentProjet .projets .cardFace {
     height: 30vh;
   }
   .accueil .containerProjet #boxProjet .contentProjet .projets .cardFace h3 {
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
   }
   .accueil .containerProjet #boxProjet .contentProjet .projets .cardFace p {
-    font-size: 25px;
+    font-size: 10px;
     text-align: center;
   }
 }
-@media screen and (min-width: 350px) and (max-width: 768px) {
+@media screen and (min-width: 350px) and (max-width: 750px) {
   .accueil .containerProjet #boxProjet .contentProjet .projets .cardFace {
     width: 45vw;
     height: 30vh;
@@ -404,7 +421,8 @@ footer .containerFooter .contactInfo > i a:hover {
     text-align: center;
   }
   .accueil .containerProjet #boxProjet .contentProjet .projets .cardFace p {
-    font-size: 10px;
+    font-size: 8px;
+    padding: 0 5vw;
     text-align: center;
   }
 }
@@ -452,11 +470,32 @@ footer .containerFooter .contactInfo > i a:hover {
   color: #FE4A49;
   transition: 0.5s ease;
 }
-@media screen and (min-width: 350px) and (max-width: 768px) {
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+  .accueil .containerProjet #boxProjet .contentProjet .projets .cardBack {
+    height: 30vh;
+  }
+  .accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .langage {
+    padding: 0;
+  }
+  .accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .langage li {
+    padding: 0 0.5vw;
+  }
+  .accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .btnVisite {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 750px) {
   .accueil .containerProjet #boxProjet .contentProjet .projets .cardBack {
     width: 45vw;
+    height: 30vh;
   }
-  .accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .langage > li > img {
+  .accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .langage {
+    padding: 0;
+  }
+  .accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .langage li {
+    padding: 0 0.5vw;
+  }
+  .accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .langage li img {
     width: 25px;
   }
   .accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .btnVisite {
@@ -466,12 +505,12 @@ footer .containerFooter .contactInfo > i a:hover {
 .accueil .containerProjet #boxProjet .contentProjet .projets:hover {
   transform: rotateY(180deg);
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 740px) and (max-width: 1000px) {
   .accueil .containerProjet #boxProjet .contentProjet .projets {
     height: 30vh;
   }
 }
-@media screen and (min-width: 350px) and (max-width: 768px) {
+@media screen and (min-width: 350px) and (max-width: 750px) {
   .accueil .containerProjet #boxProjet .contentProjet {
     height: 110vh;
     top: 10vh;
@@ -481,24 +520,29 @@ footer .containerFooter .contactInfo > i a:hover {
     width: 45vw;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  .accueil .containerProjet #boxProjet {
+    top: 5vh;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .accueil .containerProjet #boxProjet {
     top: 5vh;
     height: 75vh;
   }
 }
-@media screen and (min-width: 350px) and (max-width: 768px) {
+@media screen and (min-width: 350px) and (max-width: 767px) {
   .accueil .containerProjet #boxProjet {
     top: 10vh;
     height: 150vh;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 750px) and (max-width: 1000px) {
   .accueil {
-    height: 295vh;
+    height: 325vh;
   }
 }
-@media screen and (min-width: 350px) and (max-width: 768px) {
+@media screen and (min-width: 350px) and (max-width: 750px) {
   .accueil {
     height: 335vh;
   }
@@ -523,12 +567,12 @@ footer .containerFooter .contactInfo > i a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: oswald;
+  font-family: "roboto";
   color: #3E442B;
 }
 .prestation .containerPrestation #boxPrestation .titlePrestation {
   font-size: 9vw;
-  font-family: oswald;
+  font-family: "roboto";
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: -10px;
@@ -536,14 +580,15 @@ footer .containerFooter .contactInfo > i a:hover {
   position: relative;
   animation: transitionIn 2s;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .prestation .containerPrestation #boxPrestation .titlePrestation {
     font-size: 10vw;
   }
 }
-@media screen and (min-width: 350px) and (max-width: 768px) {
+@media screen and (min-width: 350px) and (max-width: 767px) {
   .prestation .containerPrestation #boxPrestation .titlePrestation {
     font-size: 12vw;
+    font-weight: 400;
     letter-spacing: 0;
     margin: 5vh 0;
   }
@@ -563,7 +608,7 @@ footer .containerFooter .contactInfo > i a:hover {
   text-align: center;
   margin: 10vh 0;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .prestation .containerPrestation #boxPrestation p {
     font-size: 2.5vw;
   }
@@ -572,7 +617,7 @@ footer .containerFooter .contactInfo > i a:hover {
     letter-spacing: 0;
   }
 }
-@media screen and (min-width: 350px) and (max-width: 768px) {
+@media screen and (min-width: 350px) and (max-width: 767px) {
   .prestation .containerPrestation #boxPrestation p {
     font-size: 4vw;
   }
@@ -586,17 +631,23 @@ footer .containerFooter .contactInfo > i a:hover {
   letter-spacing: -2px;
   font-size: 2.5vw;
   font-weight: 400;
+  text-align: center;
   text-transform: uppercase;
   opacity: 0;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  .prestation .containerPrestation #boxPrestation {
+    font-size: 5vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .prestation .containerPrestation #boxPrestation h3 {
     font-size: 4vw;
     text-align: center;
     letter-spacing: 0;
   }
 }
-@media screen and (min-width: 350px) and (max-width: 768px) {
+@media screen and (min-width: 350px) and (max-width: 767px) {
   .prestation .containerPrestation #boxPrestation h3 {
     font-size: 5vw;
     text-align: center;
@@ -608,7 +659,7 @@ footer .containerFooter .contactInfo > i a:hover {
     opacity: 0;
   }
 }
-@media screen and (min-width: 350px) and (max-width: 768px) {
+@media screen and (min-width: 350px) and (max-width: 767px) {
   .prestation .containerPrestation #boxPrestation .clignote {
     font-size: 5vw;
   }
@@ -641,6 +692,7 @@ footer .containerFooter .contactInfo > i a:hover {
   text-transform: uppercase;
   font-size: 1.5vw;
   font-weight: 400;
+  text-align: center;
 }
 .prestation .containerPrestation #boxPrestation .contentPrestation .services p {
   font-family: roboto;
@@ -658,7 +710,7 @@ footer .containerFooter .contactInfo > i a:hover {
 .prestation .containerPrestation #boxPrestation .contentPrestation .services:hover i {
   color: #3E442B;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .prestation .containerPrestation #boxPrestation .contentPrestation .services {
     width: 45%;
   }
@@ -672,7 +724,7 @@ footer .containerFooter .contactInfo > i a:hover {
     font-size: 2vw;
   }
 }
-@media screen and (min-width: 350px) and (max-width: 768px) {
+@media screen and (min-width: 350px) and (max-width: 767px) {
   .prestation .containerPrestation #boxPrestation .contentPrestation .services {
     width: 90%;
   }
@@ -686,12 +738,12 @@ footer .containerFooter .contactInfo > i a:hover {
     font-size: 3vw;
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .prestation .containerPrestation #boxPrestation .contentPrestation .services {
     width: 450px;
   }
 }
-@media screen and (min-width: 350px) and (max-width: 768px) {
+@media screen and (min-width: 350px) and (max-width: 767px) {
   .prestation .containerPrestation #boxPrestation .contentPrestation {
     top: 5vh;
   }
@@ -702,7 +754,7 @@ footer .containerFooter .contactInfo > i a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: oswald;
+  font-family: "roboto";
 }
 .prestation .containerPrestation #linkContact h4 {
   font-size: 3vw;
@@ -727,24 +779,33 @@ footer .containerFooter .contactInfo > i a:hover {
   border: 1px solid #FE4A49;
   transition: 1s;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .prestation .containerPrestation #linkContact {
     top: 15vh;
   }
 }
-@media screen and (min-width: 350px) and (max-width: 768px) {
+@media screen and (min-width: 350px) and (max-width: 767px) {
   .prestation .containerPrestation #linkContact {
     top: 10vh;
   }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .prestation {
-    height: 190vh;
+  .prestation .containerPrestation #linkContact h4 {
+    font-size: 5vw;
+    font-weight: 400;
   }
 }
-@media screen and (min-width: 350px) and (max-width: 768px) {
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
   .prestation {
-    height: 340vh;
+    height: 290vh;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .prestation {
+    height: 200vh;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 767px) {
+  .prestation {
+    height: 355vh;
   }
 }
 
@@ -762,7 +823,7 @@ footer .containerFooter .contactInfo > i a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: oswald;
+  font-family: "roboto";
 }
 .containerContact #boxContact h2 {
   font-size: 9vw;
@@ -783,9 +844,15 @@ footer .containerFooter .contactInfo > i a:hover {
     transform: translateY(0);
   }
 }
-@media (min-width: 350px) and (max-width: 768px) {
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+  .containerContact #boxContact h2 {
+    font-size: 10vw;
+  }
+}
+@media (min-width: 350px) and (max-width: 750px) {
   .containerContact #boxContact h2 {
     font-size: 12vw;
+    font-weight: 400;
     letter-spacing: -3px;
     margin: 5vh 0;
   }
@@ -822,15 +889,16 @@ footer .containerFooter .contactInfo > i a:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 0 0 0 2vw;
 }
 .containerContact #boxContact .containerBox #boxInfo .logoInfo i {
-  font-size: 2vw;
+  font-size: 1.5vw;
   display: flex;
   padding: 2vh 0;
 }
 .containerContact #boxContact .containerBox #boxInfo .logoInfo i a {
-  font-family: oswald;
-  font-size: 1.5vw;
+  font-family: "roboto";
+  font-size: 1.25vw;
   font-weight: 400;
   padding: 0 1vw;
   text-decoration: none;
@@ -854,7 +922,7 @@ footer .containerFooter .contactInfo > i a:hover {
   color: #FE4A49;
   transition: 0.4s ease-in-out;
 }
-@media (min-width: 350px) and (max-width: 768px) {
+@media (min-width: 350px) and (max-width: 750px) {
   .containerContact #boxContact .containerBox #boxInfo {
     height: 40vh;
     top: 0;
@@ -864,14 +932,14 @@ footer .containerFooter .contactInfo > i a:hover {
     z-index: 0;
   }
   .containerContact #boxContact .containerBox #boxInfo h3 {
-    font-size: 8vw;
+    font-size: 6vw;
     padding: 2vh 0;
   }
   .containerContact #boxContact .containerBox #boxInfo .logoInfo > i {
-    font-size: 5vw;
+    font-size: 4vw;
   }
   .containerContact #boxContact .containerBox #boxInfo .logoInfo > i a {
-    font-size: 5vw;
+    font-size: 4vw;
   }
   .containerContact #boxContact .containerBox #boxInfo .logoSocial > a > i {
     font-size: 10vw;
@@ -930,7 +998,7 @@ footer .containerFooter .contactInfo > i a:hover {
   }
   .containerContact #boxContact .containerBox #boxForm h3 {
     padding: 2vh 0;
-    font-size: 8vw;
+    font-size: 6vw;
   }
 }
 @keyframes fadeIn {
@@ -948,7 +1016,7 @@ footer .containerFooter .contactInfo > i a:hover {
     top: 5vh;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 750px) and (max-width: 1000px) {
   .containerContact #boxContact {
     width: 100%;
   }
@@ -956,10 +1024,16 @@ footer .containerFooter .contactInfo > i a:hover {
     width: 100%;
   }
   .containerContact #boxContact .containerBox #boxInfo {
-    height: 40vh;
+    width: 90%;
+    height: 30vh;
+    top: 0;
+    z-index: 0;
+    left: 50%;
+    transform: translate(-50%);
   }
   .containerContact #boxContact .containerBox #boxInfo h3 {
     font-size: 4vw;
+    padding: 0;
   }
   .containerContact #boxContact .containerBox #boxInfo .logoInfo > i {
     font-size: 2vw;
@@ -967,11 +1041,17 @@ footer .containerFooter .contactInfo > i a:hover {
   .containerContact #boxContact .containerBox #boxInfo .logoInfo > i a {
     font-size: 2vw;
   }
-  .containerContact #boxContact .containerBox #boxInfo .logoSocial > a > i {
+  .containerContact #boxContact .containerBox #boxInfo .logoSocial {
+    margin: 0;
+    padding: 2vh 0;
+  }
+  .containerContact #boxContact .containerBox #boxInfo .logoSocial a > i {
     font-size: 5vw;
     padding: 0 1vw 0 1vw;
   }
   .containerContact #boxContact .containerBox #boxForm {
+    width: 90%;
+    margin: 2vh auto;
     height: 55vh;
   }
   .containerContact #boxContact .containerBox #boxForm h3 {
@@ -979,12 +1059,12 @@ footer .containerFooter .contactInfo > i a:hover {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 750px) and (max-width: 1000px) {
   .containerContact {
-    height: 110vh;
+    height: 125vh;
   }
 }
-@media screen and (min-width: 350px) and (max-width: 768px) {
+@media screen and (min-width: 350px) and (max-width: 750px) {
   .containerContact {
     height: 160vh;
   }
