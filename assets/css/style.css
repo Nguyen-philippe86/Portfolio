@@ -29,7 +29,7 @@ header nav .logo img {
 }
 header nav .mainMenu {
   display: flex;
-  font-family: "roboto";
+  font-family: Arial, Helvetica, sans-serif;
 }
 header nav .mainMenu li {
   list-style: none;
@@ -121,7 +121,7 @@ footer .containerFooter {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "roboto";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   color: white;
 }
@@ -132,7 +132,7 @@ footer .containerFooter .contactInfo > i a {
   text-decoration: none;
   color: white;
   font-size: 13px;
-  font-family: "roboto";
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
 footer .containerFooter .contactInfo > i a:hover {
@@ -157,9 +157,10 @@ footer .containerFooter .contactInfo > i a:hover {
 
 .accueil {
   width: 100%;
-  height: 400vh;
+  height: 370vh;
   background: #F4FFF8;
   overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .accueil .containerAccueil {
   width: 70%;
@@ -174,20 +175,19 @@ footer .containerFooter .contactInfo > i a:hover {
 }
 .accueil .containerAccueil h1 {
   position: relative;
-  top: 60%;
-  font-family: "roboto";
-  font-weight: 400;
-  font-size: 8vw;
-  letter-spacing: -15px;
+  top: 74%;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 7vw;
+  letter-spacing: -10px;
   text-transform: uppercase;
   color: #FE4A49;
 }
 .accueil .containerAccueil h2 {
   position: relative;
-  top: 51%;
-  font-family: "roboto";
-  font-weight: 400;
-  font-size: 8vw;
+  top: 66%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 7vw;
   letter-spacing: -15px;
   text-transform: uppercase;
   color: #6A7062;
@@ -204,7 +204,7 @@ footer .containerFooter .contactInfo > i a:hover {
 }
 @media screen and (min-width: 1024px) and (max-width: 1919px) {
   .accueil .containerAccueil > h2 {
-    top: 48%;
+    top: 63%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -232,13 +232,15 @@ footer .containerFooter .contactInfo > i a:hover {
     justify-content: center;
   }
   .accueil .containerAccueil h1 {
-    top: 35%;
-    font-size: 10vw;
+    top: 20%;
+    font-size: 9vw;
+    font-weight: 600;
     letter-spacing: -3px;
   }
   .accueil .containerAccueil h2 {
-    top: 29%;
-    font-size: 10vw;
+    top: 14%;
+    font-size: 9vw;
+    font-weight: 300;
     letter-spacing: -3px;
   }
 }
@@ -248,15 +250,14 @@ footer .containerFooter .contactInfo > i a:hover {
 }
 .accueil .containerPortfolio #boxPortfolio {
   position: relative;
-  height: 95vh;
+  height: 70vh;
   display: flex;
   align-items: center;
 }
 .accueil .containerPortfolio #boxPortfolio .titlePortfolio {
   padding: 15vh 3vw;
-  font-size: 7vw;
-  font-family: "roboto";
-  font-weight: 300;
+  font-size: 5vw;
+  font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: -10px;
   background: #3E442B;
@@ -279,7 +280,7 @@ footer .containerFooter .contactInfo > i a:hover {
 }
 .accueil .containerPortfolio #boxPortfolio .contentPortfolio {
   padding: 5vw 3vw 5vw 10vw;
-  font-family: "roboto";
+  font-family: Arial, Helvetica, sans-serif;
   background: #6A7062;
   color: white;
   z-index: 0;
@@ -292,7 +293,7 @@ footer .containerFooter .contactInfo > i a:hover {
   margin: 2vh 0;
 }
 .accueil .containerPortfolio #boxPortfolio .contentPortfolio p {
-  font-family: roboto;
+  font-family: Arial, Helvetica, sans-serif;
   color: #F4FFF8;
 }
 @media screen and (min-width: 350px) and (max-width: 767px) {
@@ -315,7 +316,7 @@ footer .containerFooter .contactInfo > i a:hover {
 }
 @media screen and (min-width: 350px) and (max-width: 767px) {
   .accueil .containerPortfolio #boxPortfolio {
-    height: 60vh;
+    height: 40vh;
   }
 }
 .accueil .containerProjet {
@@ -331,11 +332,10 @@ footer .containerFooter .contactInfo > i a:hover {
 }
 .accueil .containerProjet #boxProjet .titleProjet {
   padding: 15vh 3vw;
-  font-size: 7vw;
-  font-family: "roboto";
+  font-size: 5vw;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  line-height: 20vh;
-  font-weight: 300;
+  line-height: 100px;
   text-transform: uppercase;
   letter-spacing: -10px;
   background: #3E442B;
@@ -344,6 +344,11 @@ footer .containerFooter .contactInfo > i a:hover {
   right: 3vw;
   top: 20vh;
   z-index: 1;
+}
+@media screen and (min-width: 2560px) {
+  .accueil .containerProjet #boxProjet .titleProjet {
+    line-height: 125px;
+  }
 }
 @media screen and (min-width: 750px) and (max-width: 1000px) {
   .accueil .containerProjet #boxProjet .titleProjet {
@@ -363,9 +368,9 @@ footer .containerFooter .contactInfo > i a:hover {
   }
 }
 .accueil .containerProjet #boxProjet .contentProjet {
-  padding: 0vw 0vw 0vw 9vw;
+  padding: 0vw 0vw 0vw 12vw;
   width: 100%;
-  font-family: "roboto";
+  font-family: Arial, Helvetica, sans-serif;
   background: #6A7062;
   color: #F4FFF8;
   z-index: 0;
@@ -533,24 +538,29 @@ footer .containerFooter .contactInfo > i a:hover {
 }
 @media screen and (min-width: 350px) and (max-width: 767px) {
   .accueil .containerProjet #boxProjet {
-    top: 10vh;
+    top: 15vh;
     height: 150vh;
   }
 }
-@media screen and (min-width: 750px) and (max-width: 1000px) {
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  .accueil {
+    height: 420vh;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .accueil {
     height: 325vh;
   }
 }
-@media screen and (min-width: 350px) and (max-width: 750px) {
+@media screen and (min-width: 350px) and (max-width: 767px) {
   .accueil {
-    height: 335vh;
+    height: 315vh;
   }
 }
 
 .prestation {
   width: 100%;
-  height: 240vh;
+  height: 230vh;
   background: #F4FFF8;
   overflow: hidden;
 }
@@ -567,12 +577,12 @@ footer .containerFooter .contactInfo > i a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "roboto";
+  font-family: Arial, Helvetica, sans-serif;
   color: #3E442B;
 }
 .prestation .containerPrestation #boxPrestation .titlePrestation {
   font-size: 9vw;
-  font-family: "roboto";
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: -10px;
@@ -587,9 +597,9 @@ footer .containerFooter .contactInfo > i a:hover {
 }
 @media screen and (min-width: 350px) and (max-width: 767px) {
   .prestation .containerPrestation #boxPrestation .titlePrestation {
-    font-size: 12vw;
+    font-size: 11vw;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: -3px;
     margin: 5vh 0;
   }
 }
@@ -676,16 +686,19 @@ footer .containerFooter .contactInfo > i a:hover {
   width: 375px;
   margin: 10px;
   padding: 20px;
-  background: #3E442B;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
   display: flex;
-  color: #F4FFF8;
   flex-direction: column;
   align-items: center;
 }
 .prestation .containerPrestation #boxPrestation .contentPrestation .services i {
   font-size: 10vw;
   margin: 1vh auto;
-  color: #F4FFF8;
 }
 .prestation .containerPrestation #boxPrestation .contentPrestation .services h4 {
   margin: 1vh auto;
@@ -695,20 +708,10 @@ footer .containerFooter .contactInfo > i a:hover {
   text-align: center;
 }
 .prestation .containerPrestation #boxPrestation .contentPrestation .services p {
-  font-family: roboto;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1vw;
   margin: 1vh auto;
   list-style-type: none;
-}
-.prestation .containerPrestation #boxPrestation .contentPrestation .services:hover {
-  transform: scale(1.2);
-  transition: all 0.5s ease-in-out;
-  background: #F4FFF8;
-  color: #3E442B;
-  border: 1px solid #3E442B;
-}
-.prestation .containerPrestation #boxPrestation .contentPrestation .services:hover i {
-  color: #3E442B;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .prestation .containerPrestation #boxPrestation .contentPrestation .services {
@@ -738,7 +741,12 @@ footer .containerFooter .contactInfo > i a:hover {
     font-size: 3vw;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 2560px) {
+  .prestation .containerPrestation #boxPrestation .contentPrestation .services {
+    width: 555px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 2559px) {
   .prestation .containerPrestation #boxPrestation .contentPrestation .services {
     width: 450px;
   }
@@ -754,7 +762,7 @@ footer .containerFooter .contactInfo > i a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "roboto";
+  font-family: Arial, Helvetica, sans-serif;
 }
 .prestation .containerPrestation #linkContact h4 {
   font-size: 3vw;
@@ -793,6 +801,11 @@ footer .containerFooter .contactInfo > i a:hover {
     font-weight: 400;
   }
 }
+@media screen and (min-width: 2560px) {
+  .prestation {
+    height: 255vh;
+  }
+}
 @media screen and (min-width: 1024px) and (max-width: 1919px) {
   .prestation {
     height: 290vh;
@@ -805,7 +818,7 @@ footer .containerFooter .contactInfo > i a:hover {
 }
 @media screen and (min-width: 350px) and (max-width: 767px) {
   .prestation {
-    height: 355vh;
+    height: 360vh;
   }
 }
 
@@ -823,7 +836,7 @@ footer .containerFooter .contactInfo > i a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "roboto";
+  font-family: Arial, Helvetica, sans-serif;
 }
 .containerContact #boxContact h2 {
   font-size: 9vw;
@@ -851,7 +864,7 @@ footer .containerFooter .contactInfo > i a:hover {
 }
 @media (min-width: 350px) and (max-width: 750px) {
   .containerContact #boxContact h2 {
-    font-size: 12vw;
+    font-size: 11vw;
     font-weight: 400;
     letter-spacing: -3px;
     margin: 5vh 0;
@@ -897,7 +910,7 @@ footer .containerFooter .contactInfo > i a:hover {
   padding: 2vh 0;
 }
 .containerContact #boxContact .containerBox #boxInfo .logoInfo i a {
-  font-family: "roboto";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.25vw;
   font-weight: 400;
   padding: 0 1vw;

@@ -96,3 +96,11 @@ document = addEventListener('scroll', () =>{
         linkContact.style.transform = 'scale(0.25)';
     }
 })
+
+////**********animation carte**********
+VanillaTilt.init(document.querySelectorAll(".services"), {
+    max: 25,
+    speed: 400,
+    glare: true,
+    "max-glare": 1,
+});
