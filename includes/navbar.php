@@ -5,7 +5,8 @@
         <div class="openMenu"><i class="fa fa-bars"></i></div>
         <ul class="mainMenu">
             <li><a href="index.php">Accueil</a></li>
-            <li><a href="prestation.php">Prestations</a></li>
+            <li><a href="projet.php">Projets</a></li>
+            <li><a href="prestation.php">Compétences</a></li>
             <li><a href="contact.php">Contact</a></li>
             <div class="closeMenu"><i class="fa fa-times"></i></div>
             <li>
@@ -16,6 +17,6 @@
             </li>
         </ul>
     </nav>
-    <div class="separateur"></div>
+    <!-- <div class="separateur"></div> -->
 
 </header>

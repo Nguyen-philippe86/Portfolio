@@ -27,79 +27,13 @@ require 'includes/header.php';
                     vitrine personnalisé ou bien des plateformes e-commerce.<br><br>
                     Je propose également mes services pour vos refontes de sites existant.
                 </p>
-                <h3>Mes compétences</h3>
-                <p>
-                    DÉVELOPPEMENT
-                    HTML | CSS | Sass | jQuery PHP | Symfony | MySQL Wordpress<br>
-                    DESIGN GRAPHIQUE
-                    – Design de site internet | Mise en page du contenu<br>
-                    MULTI-PLATEFORME
-                    Mode adaptatif aux différentes interfaces mobiles et tablettes.<br>
-                    LOGICIEL
-                    Adobe XD Visual Studio Code
-                </p>
             </div>
         </div>
     </section>
 
-    <section class="containerProjet">
-        <div id="boxProjet">
-            <h2 class="titleProjet">Projets Réalisées</h2>
-            <div class="contentProjet">
-
-                <div class="projets">
-                    <div class="cardFace">
-                        <h3>Projet personnel | Agence Code</h3>
-                        <p>Annonces de vente & location de biens immobilers.</p>
-                    </div>
-                    <div class="cardBack">
-                        <img src="assets/img/agence_code.png">
-                        <ul class="langage">
-                            <li><img src="assets/img/symfony.png"></li>
-                            <li><img src="assets/img/mysql.png"></li>
-                            <li><img src="assets/img/sass.png"></li>
-                            <li><img src="assets/img/javascript.png"></li>
-                        </ul>
-                        <a class="btnVisite" href="https://agence-code.philippe-nguyen.com" target="_blank">Voir le
-                            site</a>
-                    </div>
-                </div>
-
-                <div class="projets">
-                    <div class="cardFace">
-                        <h3>Projet de stage</h3>
-                        <p>Interface utilisateur pour une gestion de stock.</p>
-                    </div>
-                    <div class="cardBack">
-                        <img src="assets/img/stock_multimedia.png" alt="">
-                        <ul class="langage">
-                            <li><img src="assets/img/php.png" alt=""></li>
-                            <li><img src="assets/img/mysql.png" alt=""></li>
-                            <li><img src="assets/img/bootstrap.png" alt=""></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="projets">
-                    <div class="cardFace">
-                        <h3>Projet personnel | My cave</h3>
-                        <p>Présentation des vins du monde.</p>
-                    </div>
-                    <div class="cardBack">
-                        <img src="assets/img/my_cave.png" alt="">
-                        <ul class="langage">
-                            <li><img src="assets/img/symfony.png" alt=""></li>
-                            <li><img src="assets/img/mysql.png" alt=""></li>
-                            <li><img src="assets/img/sass.png" alt=""></li>
-                        </ul>
-                        <a class="btnVisite" href="https://my-cave.philippe-nguyen.com" target="_blank">Voir le site</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-
+    <section class="containerCV">
+        <a href="assets/img/cv-philippe-nguyen.pdf" download>Télécharger le CV</a>
+        <img src="assets/img/cv-philippe-nguyen.jpg">
     </section>
 
 </div>

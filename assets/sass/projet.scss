@@ -1,0 +1,137 @@
+.containerProjet{
+    width: 90%;
+    margin: 10vh auto;
+    #boxProjet{
+        // position: relative;
+        // height: 192vh;
+        // display: flex;
+        // flex-direction: row-reverse;
+        // align-items: flex-start;
+        .titleProjet{
+            font-size: 9vw;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: 100;
+            text-transform: uppercase;
+            letter-spacing: -15px;
+            color: orangered;
+            position: relative;
+            animation: transitionIn 2s;
+            @keyframes transitionIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(-40px);
+                }
+                to{
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+        .contentProjet{
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #f8f8f8;
+            z-index: 0;
+            display: flex;
+            justify-content: space-between;
+            animation: transitionRight 2s;
+            @keyframes transitionRight {
+                from {
+                    opacity: 0;
+                    transform: translateX(-75px);
+                }
+                to{
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+            .projets{
+                width: 28vw;
+                height: 50vh;
+                margin: 5vh 0;
+                transform-style: preserve-3d;
+                transition: all 0.5s ease;
+                .cardFace{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: dodgerblue;
+                    color: white;
+                    backface-visibility: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 20px;
+                    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+                    border-top: 2px solid rgba(255,255,255, 0.5);
+                    border-left: 2px solid rgba(255, 255, 255, 0.5);
+                    h3{
+                        font-size: 35px;
+                        font-weight: 500;
+                        margin: 2vh 0;
+                        text-transform: uppercase;
+                        text-align: center;
+                    }
+                    p{
+                        text-align: center;
+                    }
+                }
+                .cardBack{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: dodgerblue;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    backface-visibility: hidden;
+                    transform: rotateY(180deg);
+                    border-radius: 20px;
+                    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+                    border-bottom: 2px solid rgba(255,255,255, 0.5);
+                    img{
+                        width: 100%;
+                        border-top-left-radius: 20px;
+                        border-top-right-radius: 20px;
+                    }
+                    .langage{
+                        margin: 5vh 0;
+                        display: flex;
+                        justify-content: space-between;
+                        padding-left: 0;
+                        align-items: center;
+                        li{
+                            list-style-type: none;
+                            padding: 0 0.5vw;
+                            img{
+                                width: 40px;
+                                border: 0;
+                            }
+                        }
+                    }
+                    .btnVisite{
+                        background: #FE4A49;
+                        padding: 1vh 5vw;
+                        text-decoration: none;
+                        color: #f8f8f8;
+                        text-transform: uppercase;
+                        margin: 1vh auto;
+                        text-align: center;
+                        &:hover{
+                            background: $mintCream;
+                            border: 1px solid $tartOrange;
+                            color: $tartOrange;
+                            transition: 0.5s ease;
+                        }
+                    }
+                }            
+                &:hover{
+                    transform: rotateY(180deg);
+                }
+            }
+            
+        }
+    }
+}

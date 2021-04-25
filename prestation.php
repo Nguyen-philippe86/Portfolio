@@ -5,14 +5,13 @@
 
     <section class="containerPrestation">
         <div id="boxPrestation">
-            <h2 class="titlePrestation">Prestations</h2>
+            <h2 class="titlePrestation">Mes compétences</h2>
             <p>Besoin d’un site vitrine ou e-commerce ? Tous les designs sont possibles ! Selon votre budget, je réalise
                 pour vous un site web personnalisé, facile d’utilisation, évolutif et fonctionnel ! Avoir un site web
                 vous permet de présenter votre entreprise et son activité.
             </p>
             <h3 class="textAnim">Vous avez un projet ou une idée en tête ? Demander un devis,
                 c'est gratuit !</h3>
-            <!-- <h4 class="clignote"><i class="fas fa-arrow-down"></i></h4> -->
 
             <div class="contentPrestation">
 

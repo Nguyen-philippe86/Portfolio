@@ -27,7 +27,6 @@ document.addEventListener('scroll',()=>{
 
 //**********animation portfolio**********
 const boxPortfolio = document.getElementById('boxPortfolio');
-const boxProjet = document.getElementById('boxProjet');
 
 document.addEventListener('scroll',()=>{
     let value = window.scrollY;
@@ -40,15 +39,6 @@ document.addEventListener('scroll',()=>{
     else{
         boxPortfolio.style.opacity = '0';
         boxPortfolio.style.transform = 'translateX(-50px)';
-    }
-    if(value >= 850){
-        boxProjet.style.opacity = '1';
-        boxProjet.style.transform = 'translateX(0px)';
-        boxProjet.style.transition = '1.25s ease-in-out';
-    }
-    else{
-        boxProjet.style.opacity = '0';
-        boxProjet.style.transform = 'translateX(50px)';
     }
 });
 
@@ -97,7 +87,14 @@ document = addEventListener('scroll', () =>{
     }
 })
 
-////**********animation carte**********
+////**********animation carte prestation**********
+VanillaTilt.init(document.querySelectorAll("#boxInfo"), {
+    max: 25,
+    speed: 400,
+    glare: true,
+    "max-glare": 1,
+});
+////**********animation carte prestation**********
 VanillaTilt.init(document.querySelectorAll(".services"), {
     max: 25,
     speed: 400,

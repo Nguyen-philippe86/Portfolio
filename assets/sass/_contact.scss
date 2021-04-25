@@ -1,23 +1,23 @@
 .containerContact{
     width: 100%;
-    height: 150vh;    
-    background-color: $mintCream;
     #boxContact{
         width: 90%;
-        margin: 0 auto;
+        margin: auto;
+        margin-bottom: 50px;
         position: relative;
-        top: 18vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: sans-serif;
         h2{
             font-size: 9vw;
-            font-weight: 300;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: 100;
             text-transform: uppercase;
-            letter-spacing: -10px;
-            color: $tartOrange;
+            letter-spacing: -15px;
+            color: orangered;
             position: relative;
             animation: transitionIn 2s;
         }
@@ -48,8 +48,6 @@
             display: flex;
             width: 90%;
             margin: auto;
-            position: relative;
-            top: 15vh;
             animation: fadeIn 2s;
             #boxInfo {
                 width: 50%;
@@ -57,13 +55,19 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                background: #6A7062;
+                background: linear-gradient(135deg, black, transparent);
                 position: relative;
                 height: 60vh;
                 top: 7vh;
                 left: 5vw;
                 z-index: 2;
                 color: #F4FFF8;
+                overflow: hidden;
+                backdrop-filter: blur(5px);
+                border-radius: 20px;
+                box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+                border-top: 2px solid rgba(255,255,255, 0.5);
+                border-left: 2px solid rgba(255, 255, 255, 0.5);
                 h3{
                     font-size: 2vw;
                     font-weight: 400;
@@ -140,7 +144,12 @@
                 position: relative;
                 right: 5vw;
                 padding: 5% 5% 0 15%;
-                background: #3E442B;
+                background: dodgerblue;
+                border-radius: 20px;
+                box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+                border-top: 2px solid rgba(255,255,255, 0.5);
+                border-left: 2px solid rgba(255, 255, 255, 0.5);
+
                 h3{
                     font-size: 2vw;
                     font-weight: 400;
@@ -165,6 +174,10 @@
                             color: #FCFFFC;
                             border: 1px solid $tartOrange;
                             text-transform: uppercase;
+                            border-radius: 10px;
+                            box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+                            border-top: 1px solid rgba(255,255,255, 0.5);
+                            border-left: 1px solid rgba(255, 255, 255, 0.5);
                             &:hover{
                                 background: #FCFFFC;
                                 color: $tartOrange;

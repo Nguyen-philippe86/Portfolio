@@ -1,6 +1,8 @@
 <?php
 
-use Mailjet\Resources;
+    require 'includes/header.php';
+
+    use Mailjet\Resources;
 
     require_once __DIR__.'/vendor/autoload.php';
 
@@ -40,7 +42,9 @@ use Mailjet\Resources;
             ];
             $response = $mj->post(Resources::$Email, ['body' => $body]);
             $response->success();
-            echo 'Email envoyé avec succès';
+            echo '<div class="alert alert-primary" style="width:70%; margin:auto; top:20vh; height: 20vh;" role="alert">
+                Votre message a été envoyé avec succès ! <a href="index.php" class="alert-link">Revenir à l\'accueil</a>.
+                </div>';
         } else {
             echo 'Email non valide';
         }

@@ -5,12 +5,10 @@
 }
 
 header {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  margin: 0;
-  background: transparent;
-  z-index: 2;
+  width: 90%;
+  margin: 0 auto;
+  height: 10vh;
+  box-shadow: 0px 25px 10px -25px grey;
 }
 header nav {
   width: 70%;
@@ -62,12 +60,6 @@ header nav .mainMenu .closeMenu, header nav > i {
   display: none;
   cursor: pointer;
 }
-header .separateur {
-  width: 75%;
-  margin: auto;
-  height: 1px;
-  background-color: black;
-}
 @media screen and (max-width: 950px) {
   header nav .mainMenu {
     height: 100vh;
@@ -88,7 +80,7 @@ header .separateur {
     padding: 10px 10px;
     font-size: 30px;
     font-weight: 300;
-    color: #F4FFF8;
+    color: #f8f8f8;
   }
   header nav .mainMenu li .social {
     padding-top: 30px;
@@ -157,40 +149,37 @@ footer .containerFooter .contactInfo > i a:hover {
 
 .accueil {
   width: 100%;
-  height: 370vh;
-  background: #F4FFF8;
   overflow: hidden;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
 }
 .accueil .containerAccueil {
   width: 70%;
   margin: auto;
   height: 100vh;
-  position: relative;
   bottom: 0;
   display: flex;
   flex-direction: column;
-  z-index: 0;
   animation: transitionAccueil 2s;
 }
 .accueil .containerAccueil h1 {
   position: relative;
-  top: 74%;
-  font-weight: 600;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 7vw;
-  letter-spacing: -10px;
+  top: 66%;
+  font-weight: 400;
+  font-family: sans-serif;
+  font-size: 8vw;
+  letter-spacing: -20px;
   text-transform: uppercase;
-  color: #FE4A49;
+  color: deepskyblue;
 }
 .accueil .containerAccueil h2 {
   position: relative;
-  top: 66%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 7vw;
-  letter-spacing: -15px;
+  top: 57%;
+  font-family: sans-serif;
+  font-size: 8vw;
+  font-weight: 100;
+  letter-spacing: -19px;
   text-transform: uppercase;
-  color: #6A7062;
+  color: orangered;
 }
 @keyframes transitionAccueil {
   from {
@@ -246,25 +235,29 @@ footer .containerFooter .contactInfo > i a:hover {
 }
 .accueil .containerPortfolio {
   width: 90%;
-  margin: 10vh auto;
+  margin: 5vh auto;
 }
 .accueil .containerPortfolio #boxPortfolio {
-  position: relative;
-  height: 70vh;
   display: flex;
   align-items: center;
 }
 .accueil .containerPortfolio #boxPortfolio .titlePortfolio {
   padding: 15vh 3vw;
   font-size: 5vw;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
+  font-weight: 100;
   text-transform: uppercase;
   letter-spacing: -10px;
-  background: #3E442B;
+  background: linear-gradient(135deg, black, transparent);
+  backdrop-filter: blur(5px);
   color: white;
   position: relative;
   left: 4vw;
   z-index: 1;
+  border-radius: 20px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
 }
 @media screen and (min-width: 767px) and (max-width: 1023px) {
   .accueil .containerPortfolio #boxPortfolio .titlePortfolio {
@@ -280,12 +273,16 @@ footer .containerFooter .contactInfo > i a:hover {
 }
 .accueil .containerPortfolio #boxPortfolio .contentPortfolio {
   padding: 5vw 3vw 5vw 10vw;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #6A7062;
+  font-family: sans-serif;
+  background: dodgerblue;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
   color: white;
   z-index: 0;
   position: relative;
-  right: 3vw;
+  right: 4vw;
+  border-radius: 20px;
 }
 .accueil .containerPortfolio #boxPortfolio .contentPortfolio h3 {
   font-size: 3vw;
@@ -293,8 +290,9 @@ footer .containerFooter .contactInfo > i a:hover {
   margin: 2vh 0;
 }
 .accueil .containerPortfolio #boxPortfolio .contentPortfolio p {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #F4FFF8;
+  font-family: sans-serif;
+  color: white;
+  font-size: 0.9vw;
 }
 @media screen and (min-width: 350px) and (max-width: 767px) {
   .accueil .containerPortfolio #boxPortfolio .contentPortfolio h3 {
@@ -319,228 +317,45 @@ footer .containerFooter .contactInfo > i a:hover {
     height: 40vh;
   }
 }
-.accueil .containerProjet {
-  width: 90%;
-  margin: 10vh auto;
-}
-.accueil .containerProjet #boxProjet {
-  position: relative;
-  height: 192vh;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-start;
-}
-.accueil .containerProjet #boxProjet .titleProjet {
-  padding: 15vh 3vw;
-  font-size: 5vw;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  line-height: 100px;
-  text-transform: uppercase;
-  letter-spacing: -10px;
-  background: #3E442B;
-  color: #F4FFF8;
-  position: relative;
-  right: 3vw;
-  top: 20vh;
-  z-index: 1;
-}
-@media screen and (min-width: 2560px) {
-  .accueil .containerProjet #boxProjet .titleProjet {
-    line-height: 125px;
-  }
-}
-@media screen and (min-width: 750px) and (max-width: 1000px) {
-  .accueil .containerProjet #boxProjet .titleProjet {
-    letter-spacing: -5px;
-    line-height: inherit;
-    top: 30vh;
-  }
-}
-@media screen and (min-width: 350px) and (max-width: 750px) {
-  .accueil .containerProjet #boxProjet .titleProjet {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    letter-spacing: 0;
-    padding: 10vh 0;
-    line-height: 12vh;
-    top: 16vh;
-  }
-}
-.accueil .containerProjet #boxProjet .contentProjet {
-  padding: 0vw 0vw 0vw 12vw;
-  width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #6A7062;
-  color: #F4FFF8;
-  z-index: 0;
-  position: relative;
-  left: 4vw;
-}
-.accueil .containerProjet #boxProjet .contentProjet .projets {
-  width: 30vw;
-  height: 50vh;
-  margin: 5vh 0;
-  transform-style: preserve-3d;
-  transition: all 0.5s ease;
-}
-.accueil .containerProjet #boxProjet .contentProjet .projets .cardFace {
-  position: absolute;
-  width: 30vw;
-  height: 50vh;
-  background: #F4FFF8;
-  color: black;
-  backface-visibility: hidden;
+.accueil .containerCV {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 5vh;
 }
-.accueil .containerProjet #boxProjet .contentProjet .projets .cardFace h3 {
-  font-size: 1.5vw;
-  font-weight: 500;
-  margin: 2vh 0;
-  text-transform: uppercase;
+.accueil .containerCV a {
+  width: 30%;
+  margin: auto;
   text-align: center;
-}
-@media screen and (min-width: 750px) and (max-width: 1000px) {
-  .accueil .containerProjet #boxProjet .contentProjet .projets .cardFace {
-    height: 30vh;
-  }
-  .accueil .containerProjet #boxProjet .contentProjet .projets .cardFace h3 {
-    font-size: 15px;
-    text-align: center;
-  }
-  .accueil .containerProjet #boxProjet .contentProjet .projets .cardFace p {
-    font-size: 10px;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 350px) and (max-width: 750px) {
-  .accueil .containerProjet #boxProjet .contentProjet .projets .cardFace {
-    width: 45vw;
-    height: 30vh;
-  }
-  .accueil .containerProjet #boxProjet .contentProjet .projets .cardFace h3 {
-    font-size: 10px;
-    text-align: center;
-  }
-  .accueil .containerProjet #boxProjet .contentProjet .projets .cardFace p {
-    font-size: 8px;
-    padding: 0 5vw;
-    text-align: center;
-  }
-}
-.accueil .containerProjet #boxProjet .contentProjet .projets .cardBack {
-  position: absolute;
-  width: 30vw;
-  height: 50vh;
-  background: #F4FFF8;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
-}
-.accueil .containerProjet #boxProjet .contentProjet .projets .cardBack img {
-  width: 100%;
-}
-.accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .langage {
-  margin: 2vh 0;
-  display: flex;
-  align-items: center;
-}
-.accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .langage li {
-  list-style-type: none;
-  padding: 0 0.5vw;
-}
-.accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .langage li img {
-  width: 40px;
-}
-.accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .btnVisite {
-  background: #FE4A49;
-  padding: 1vh 5vw;
-  top: 3vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  display: inline-block;
+  padding: 10px 20px;
+  background: orangered;
   text-decoration: none;
-  color: #F4FFF8;
+  color: white;
   text-transform: uppercase;
-  width: 60%;
-  margin: 1vh auto;
-  text-align: center;
-  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
-.accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .btnVisite:hover {
-  background: #F4FFF8;
-  border: 1px solid #FE4A49;
-  color: #FE4A49;
-  transition: 0.5s ease;
+.accueil .containerCV a:hover {
+  background: #FCFFFC;
+  color: orangered;
+  border: 1px solid orangered;
+  transition: 0.4s ease-in-out;
 }
-@media screen and (min-width: 750px) and (max-width: 1000px) {
-  .accueil .containerProjet #boxProjet .contentProjet .projets .cardBack {
-    height: 30vh;
-  }
-  .accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .langage {
-    padding: 0;
-  }
-  .accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .langage li {
-    padding: 0 0.5vw;
-  }
-  .accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .btnVisite {
-    font-size: 10px;
-  }
+.accueil .containerCV img {
+  width: 30%;
+  margin: auto;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
-@media screen and (min-width: 350px) and (max-width: 750px) {
-  .accueil .containerProjet #boxProjet .contentProjet .projets .cardBack {
-    width: 45vw;
-    height: 30vh;
-  }
-  .accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .langage {
-    padding: 0;
-  }
-  .accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .langage li {
-    padding: 0 0.5vw;
-  }
-  .accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .langage li img {
-    width: 25px;
-  }
-  .accueil .containerProjet #boxProjet .contentProjet .projets .cardBack .btnVisite {
-    font-size: 10px;
-  }
-}
-.accueil .containerProjet #boxProjet .contentProjet .projets:hover {
-  transform: rotateY(180deg);
-}
-@media screen and (min-width: 740px) and (max-width: 1000px) {
-  .accueil .containerProjet #boxProjet .contentProjet .projets {
-    height: 30vh;
-  }
-}
-@media screen and (min-width: 350px) and (max-width: 750px) {
-  .accueil .containerProjet #boxProjet .contentProjet {
-    height: 110vh;
-    top: 10vh;
-  }
-  .accueil .containerProjet #boxProjet .contentProjet .projets {
-    height: 30vh;
-    width: 45vw;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1919px) {
-  .accueil .containerProjet #boxProjet {
-    top: 5vh;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .accueil .containerProjet #boxProjet {
-    top: 5vh;
-    height: 75vh;
-  }
-}
-@media screen and (min-width: 350px) and (max-width: 767px) {
-  .accueil .containerProjet #boxProjet {
-    top: 15vh;
-    height: 150vh;
-  }
+.accueil .containerCV img:hover {
+  transform: scale(1.75);
+  transform-origin: 50% 100%;
+  transition: all 1s ease-in-out;
 }
 @media screen and (min-width: 1024px) and (max-width: 1919px) {
   .accueil {
@@ -558,17 +373,145 @@ footer .containerFooter .contactInfo > i a:hover {
   }
 }
 
+.containerProjet {
+  width: 90%;
+  margin: 10vh auto;
+}
+.containerProjet #boxProjet .titleProjet {
+  font-size: 9vw;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: -15px;
+  color: orangered;
+  position: relative;
+  animation: transitionIn 2s;
+}
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.containerProjet #boxProjet .contentProjet {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f8f8f8;
+  z-index: 0;
+  display: flex;
+  justify-content: space-between;
+  animation: transitionRight 2s;
+}
+@keyframes transitionRight {
+  from {
+    opacity: 0;
+    transform: translateX(-75px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.containerProjet #boxProjet .contentProjet .projets {
+  width: 28vw;
+  height: 50vh;
+  margin: 5vh 0;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+.containerProjet #boxProjet .contentProjet .projets .cardFace {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: dodgerblue;
+  color: white;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+}
+.containerProjet #boxProjet .contentProjet .projets .cardFace h3 {
+  font-size: 35px;
+  font-weight: 500;
+  margin: 2vh 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+.containerProjet #boxProjet .contentProjet .projets .cardFace p {
+  text-align: center;
+}
+.containerProjet #boxProjet .contentProjet .projets .cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: dodgerblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+.containerProjet #boxProjet .contentProjet .projets .cardBack img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.containerProjet #boxProjet .contentProjet .projets .cardBack .langage {
+  margin: 5vh 0;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  align-items: center;
+}
+.containerProjet #boxProjet .contentProjet .projets .cardBack .langage li {
+  list-style-type: none;
+  padding: 0 0.5vw;
+}
+.containerProjet #boxProjet .contentProjet .projets .cardBack .langage li img {
+  width: 40px;
+  border: 0;
+}
+.containerProjet #boxProjet .contentProjet .projets .cardBack .btnVisite {
+  background: #FE4A49;
+  padding: 1vh 5vw;
+  text-decoration: none;
+  color: #f8f8f8;
+  text-transform: uppercase;
+  margin: 1vh auto;
+  text-align: center;
+}
+.containerProjet #boxProjet .contentProjet .projets .cardBack .btnVisite:hover {
+  background: #f8f8f8;
+  border: 1px solid #FE4A49;
+  color: #FE4A49;
+  transition: 0.5s ease;
+}
+.containerProjet #boxProjet .contentProjet .projets:hover {
+  transform: rotateY(180deg);
+}
+
 .prestation {
   width: 100%;
   height: 230vh;
-  background: #F4FFF8;
   overflow: hidden;
 }
 .prestation .containerPrestation {
   width: 90%;
   margin: 5vh auto;
   position: relative;
-  top: 13vh;
   display: flex;
   flex-direction: column;
 }
@@ -577,16 +520,16 @@ footer .containerFooter .contactInfo > i a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #3E442B;
+  font-family: sans-serif;
 }
 .prestation .containerPrestation #boxPrestation .titlePrestation {
   font-size: 9vw;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 300;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 100;
   text-transform: uppercase;
-  letter-spacing: -10px;
-  color: #FE4A49;
+  letter-spacing: -15px;
+  color: orangered;
   position: relative;
   animation: transitionIn 2s;
 }
@@ -687,12 +630,14 @@ footer .containerFooter .contactInfo > i a:hover {
   margin: 10px;
   padding: 20px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
   background: rgba(255, 255, 255, 0.1);
   overflow: hidden;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
   display: flex;
+  color: dodgerblue;
   flex-direction: column;
   align-items: center;
 }
@@ -708,7 +653,7 @@ footer .containerFooter .contactInfo > i a:hover {
   text-align: center;
 }
 .prestation .containerPrestation #boxPrestation .contentPrestation .services p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: 1vw;
   margin: 1vh auto;
   list-style-type: none;
@@ -767,24 +712,28 @@ footer .containerFooter .contactInfo > i a:hover {
 .prestation .containerPrestation #linkContact h4 {
   font-size: 3vw;
   text-transform: uppercase;
-  color: #3E442B;
+  color: dodgerblue;
   font-weight: 400;
 }
 .prestation .containerPrestation #linkContact .btnContact {
-  background: #FE4A49;
+  background: orangered;
   padding: 1vh 5vw;
   top: 3vh;
   text-decoration: none;
-  color: #F4FFF8;
+  color: white;
   text-transform: uppercase;
   margin: 2vh auto;
   text-align: center;
   cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 .prestation .containerPrestation #linkContact .btnContact:hover {
-  background: #F4FFF8;
-  color: #FE4A49;
-  border: 1px solid #FE4A49;
+  background: white;
+  color: orangered;
+  border: 1px solid orangered;
   transition: 1s;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -824,26 +773,26 @@ footer .containerFooter .contactInfo > i a:hover {
 
 .containerContact {
   width: 100%;
-  height: 150vh;
-  background-color: #F4FFF8;
 }
 .containerContact #boxContact {
   width: 90%;
-  margin: 0 auto;
+  margin: auto;
+  margin-bottom: 50px;
   position: relative;
-  top: 18vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
 }
 .containerContact #boxContact h2 {
   font-size: 9vw;
-  font-weight: 300;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 100;
   text-transform: uppercase;
-  letter-spacing: -10px;
-  color: #FE4A49;
+  letter-spacing: -15px;
+  color: orangered;
   position: relative;
   animation: transitionIn 2s;
 }
@@ -874,8 +823,6 @@ footer .containerFooter .contactInfo > i a:hover {
   display: flex;
   width: 90%;
   margin: auto;
-  position: relative;
-  top: 15vh;
   animation: fadeIn 2s;
 }
 .containerContact #boxContact .containerBox #boxInfo {
@@ -884,13 +831,19 @@ footer .containerFooter .contactInfo > i a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #6A7062;
+  background: linear-gradient(135deg, black, transparent);
   position: relative;
   height: 60vh;
   top: 7vh;
   left: 5vw;
   z-index: 2;
   color: #F4FFF8;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
 }
 .containerContact #boxContact .containerBox #boxInfo h3 {
   font-size: 2vw;
@@ -915,7 +868,7 @@ footer .containerFooter .contactInfo > i a:hover {
   font-weight: 400;
   padding: 0 1vw;
   text-decoration: none;
-  color: #F4FFF8;
+  color: #f8f8f8;
 }
 .containerContact #boxContact .containerBox #boxInfo .logoInfo i a:hover {
   color: #FE4A49;
@@ -928,7 +881,7 @@ footer .containerFooter .contactInfo > i a:hover {
 }
 .containerContact #boxContact .containerBox #boxInfo .logoSocial a > i {
   font-size: 3vw;
-  color: #F4FFF8;
+  color: #f8f8f8;
   padding-right: 2vh;
 }
 .containerContact #boxContact .containerBox #boxInfo .logoSocial a > i:hover {
@@ -967,14 +920,18 @@ footer .containerFooter .contactInfo > i a:hover {
   position: relative;
   right: 5vw;
   padding: 5% 5% 0 15%;
-  background: #3E442B;
+  background: dodgerblue;
+  border-radius: 20px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
 }
 .containerContact #boxContact .containerBox #boxForm h3 {
   font-size: 2vw;
   font-weight: 400;
   text-transform: uppercase;
   padding: 0 0 5vh 0;
-  color: #F4FFF8;
+  color: #f8f8f8;
 }
 .containerContact #boxContact .containerBox #boxForm form {
   width: 90%;
@@ -995,6 +952,10 @@ footer .containerFooter .contactInfo > i a:hover {
   color: #FCFFFC;
   border: 1px solid #FE4A49;
   text-transform: uppercase;
+  border-radius: 10px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 .containerContact #boxContact .containerBox #boxForm form .btnForm input:hover {
   background: #FCFFFC;

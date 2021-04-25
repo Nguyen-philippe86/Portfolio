@@ -4,12 +4,15 @@
     box-sizing: border-box;
 }
 header{ 
-    width: 100%;
-    position: absolute;
-    top: 0;
-    margin: 0;
-    background: transparent;
-    z-index: 2;
+    width: 90%;
+    margin: 0 auto;
+    height: 10vh;
+    box-shadow: 0px 25px 10px -25px grey;
+    // position: absolute;
+    // top: 0;
+    // margin: 0;
+    // background: transparent;
+    // z-index: 2;
     nav{
         width: 70%;   
         margin: auto;
@@ -60,12 +63,12 @@ header{
             cursor: pointer;
         }
     }
-    .separateur{
-        width: 75%;
-        margin: auto;
-        height: 1px;
-        background-color: black;
-    }
+    // .separateur{
+    //     width: 75%;
+    //     margin: auto;
+    //     height: 1px;
+    //     background-color: black;
+    // }
     @media screen and (max-width: 950px){
         nav .mainMenu{
             height: 100vh;
