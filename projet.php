@@ -12,7 +12,7 @@ require 'includes/header.php';
                     <h3>Projet personnel | Agence Code</h3>
                     <p>Petite annonces de vente & location de biens immobilers sous forme de CRUD avec un système
                         d'authentification et une interface
-                        administrateur.</p>
+                        administrateur. (voir détails au verso)</p>
                 </div>
                 <div class="cardBack">
                     <img src="assets/img/agence_code.png">
@@ -31,7 +31,7 @@ require 'includes/header.php';
                 <div class="cardFace">
                     <h3>Projet de stage</h3>
                     <p>Interface utilisateur pour une gestion de stock sous forme de CRUD avec un système
-                        d'authentification.</p>
+                        d'authentification. (voir détails au verso)</p>
                 </div>
                 <div class="cardBack">
                     <img src="assets/img/stock_multimedia.png" alt="">
@@ -47,7 +47,7 @@ require 'includes/header.php';
                 <div class="cardFace">
                     <h3>Projet personnel | My cave</h3>
                     <p>Présentation des vins du monde sous forme de CRUD avec un système
-                        d'authentification.</p>
+                        d'authentification. (voir détails au verso)</p>
                 </div>
                 <div class="cardBack">
                     <img src="assets/img/my_cave.png" alt="">

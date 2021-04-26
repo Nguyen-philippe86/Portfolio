@@ -27,6 +27,7 @@ document.addEventListener('scroll',()=>{
 
 //**********animation portfolio**********
 const boxPortfolio = document.getElementById('boxPortfolio');
+const containerCV = document.querySelector('.containerCV');
 
 document.addEventListener('scroll',()=>{
     let value = window.scrollY;
@@ -39,6 +40,15 @@ document.addEventListener('scroll',()=>{
     else{
         boxPortfolio.style.opacity = '0';
         boxPortfolio.style.transform = 'translateX(-50px)';
+    }
+    if(value >= 700){
+        containerCV.style.opacity = '1';
+        containerCV.style.transform = 'translateX(0px)';
+        containerCV.style.transition = '1.25s ease-in-out';
+    }
+    else{
+        containerCV.style.opacity = '0';
+        containerCV.style.transform = 'translateX(50px)';
     }
 });
 
@@ -66,11 +76,9 @@ txtAnim.style.opacity = '1'
 new Typewriter(txtAnim, {
 })
     .changeDelay(75)
-    .typeString('Vous avez un projet ou une idée en tête ?')
+    .typeString('Mon profil vous a convaincue ?')
     .pauseFor(300)
-    .typeString(' Demander un devis,')
-    .pauseFor(300)
-    .typeString('<strong style = "color: # FE4A49;"> c\'est gratuit !</strong>')
+    .typeString(' <a href="contact.php" style="color:orangered;"><strong>Contactez moi</strong></a> !')
     .start();
 
 //**********animation contact prestation**********
@@ -87,13 +95,6 @@ document = addEventListener('scroll', () =>{
     }
 })
 
-////**********animation carte prestation**********
-VanillaTilt.init(document.querySelectorAll("#boxInfo"), {
-    max: 25,
-    speed: 400,
-    glare: true,
-    "max-glare": 1,
-});
 ////**********animation carte prestation**********
 VanillaTilt.init(document.querySelectorAll(".services"), {
     max: 25,

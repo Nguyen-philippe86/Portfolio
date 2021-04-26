@@ -1,5 +1,6 @@
 .containerContact{
     width: 100%;
+    margin-top: 10vh;
     #boxContact{
         width: 90%;
         margin: auto;
@@ -38,16 +39,16 @@
         }
         @media (min-width: 350px) and (max-width: 750px){
             h2{
-                font-size: 11vw;
+                font-size: 10vw;
                 font-weight: 400;
                 letter-spacing: -3px;
-                margin: 5vh 0;
+                margin: 0;
             }
         }
         .containerBox{
             display: flex;
             width: 90%;
-            margin: auto;
+            margin-top: 5vh;
             animation: fadeIn 2s;
             #boxInfo {
                 width: 50%;
@@ -121,7 +122,7 @@
                     margin-bottom: 1vh;
                     z-index: 0;
                     h3{
-                        font-size: 6vw;
+                        font-size: 5vw;
                         padding: 2vh 0;
                     }
                     .logoInfo > i{
@@ -144,12 +145,11 @@
                 position: relative;
                 right: 5vw;
                 padding: 5% 5% 0 15%;
-                background: dodgerblue;
+                background: linear-gradient(135deg, dodgerblue, rgb(129, 0, 129));                
                 border-radius: 20px;
                 box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
                 border-top: 2px solid rgba(255,255,255, 0.5);
                 border-left: 2px solid rgba(255, 255, 255, 0.5);
-
                 h3{
                     font-size: 2vw;
                     font-weight: 400;
@@ -196,7 +196,7 @@
                     right: 0;
                     h3{
                         padding: 2vh 0;
-                        font-size: 6vw;
+                        font-size: 5vw;
                     }
                 }
             }
@@ -258,15 +258,5 @@
                 }
             }
         }
-    }
-}
-@media screen and (min-width: 750px) and (max-width: 1000px){
-    .containerContact{
-        height: 125vh;
-    }
-}
-@media screen and (min-width:350px) and (max-width: 750px){
-    .containerContact{
-        height: 160vh;
     }
 }

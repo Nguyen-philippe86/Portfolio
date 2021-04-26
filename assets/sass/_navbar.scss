@@ -8,11 +8,6 @@ header{
     margin: 0 auto;
     height: 10vh;
     box-shadow: 0px 25px 10px -25px grey;
-    // position: absolute;
-    // top: 0;
-    // margin: 0;
-    // background: transparent;
-    // z-index: 2;
     nav{
         width: 70%;   
         margin: auto;
@@ -63,12 +58,6 @@ header{
             cursor: pointer;
         }
     }
-    // .separateur{
-    //     width: 75%;
-    //     margin: auto;
-    //     height: 1px;
-    //     background-color: black;
-    // }
     @media screen and (max-width: 950px){
         nav .mainMenu{
             height: 100vh;
@@ -110,5 +99,8 @@ header{
             color: $tartOrange;
             font-size: 1,5rem;
         }
+    }
+    @media screen and (min-width: 350px) and (max-width:767px){
+        height: 15vh;
     }
 }

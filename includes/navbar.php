@@ -6,7 +6,7 @@
         <ul class="mainMenu">
             <li><a href="index.php">Accueil</a></li>
             <li><a href="projet.php">Projets</a></li>
-            <li><a href="prestation.php">Compétences</a></li>
+            <li><a href="competence.php">Compétences</a></li>
             <li><a href="contact.php">Contact</a></li>
             <div class="closeMenu"><i class="fa fa-times"></i></div>
             <li>
