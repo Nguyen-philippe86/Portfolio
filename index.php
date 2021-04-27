@@ -5,8 +5,8 @@ require 'includes/header.php';
 <div class="accueil">
 
     <section class="containerAccueil">
-        <h1 id="parallax">#Développeur web</h1><br>
-        <h2 id="parallax2">& web mobile</h2>
+        <h1 id="parallax">Développeur</h1><br>
+        <h2 id="parallax2">Web</h2>
     </section>
 
     <section class="containerPortfolio">
@@ -14,7 +14,7 @@ require 'includes/header.php';
             <div class="titlePortfolio"><img src="assets/img/photo_profil.jpeg">
             </div>
             <div class="contentPortfolio">
-                <h3>Qui suis-je ?</h3>
+                <h3>À propos de moi</h3>
                 <p>
                     Hello ! Je m’appelle Philippe Nguyen, développeur web.<br><br>
                     Passionné depuis mon plus jeune âge pour le développement web, je me suis reconverti dans ce domaine
@@ -31,9 +31,11 @@ require 'includes/header.php';
 
     <section class="containerCV">
         <a href="assets/img/cv-philippe-nguyen.pdf" download>Télécharger le CV</a>
-        <img src="assets/img/cv-philippe-nguyen.jpg">
+        <div class="boxCV">
+            <img class="animClipArt" src="assets/img/clipart.png" alt="">
+            <img class="imgCV" src="assets/img/cv-philippe-nguyen.jpg">
+        </div>
     </section>
-
 </div>
 
 <?php

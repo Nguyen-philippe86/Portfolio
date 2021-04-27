@@ -37,14 +37,14 @@ header nav .mainMenu li {
 header nav .mainMenu li a {
   text-decoration: none;
   display: inline-block;
-  color: #3E442B;
+  color: black;
   font-size: 17px;
 }
 header nav .mainMenu li a:hover {
   transform: scale(1.2);
   transition: all 0.35s ease-in-out;
   z-index: 1;
-  color: #FE4A49;
+  color: orangered;
 }
 header nav .mainMenu li .social {
   padding-left: 5px;
@@ -74,7 +74,7 @@ header nav .mainMenu .closeMenu, header nav > i {
     background-color: rgba(0, 0, 0, 0.9);
     transition: top 1s ease-in-out;
     display: none;
-    color: #FE4A49;
+    color: orangered;
   }
   header nav .mainMenu li a {
     padding: 10px 10px;
@@ -103,6 +103,11 @@ header nav .mainMenu .closeMenu, header nav > i {
 @media screen and (min-width: 350px) and (max-width: 767px) {
   header {
     height: 15vh;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  header {
+    height: 12vh;
   }
 }
 
@@ -168,11 +173,11 @@ footer .containerFooter .contactInfo > i a:hover {
 }
 .accueil .containerAccueil h1 {
   position: relative;
-  top: 65%;
-  font-weight: 800;
+  top: 55%;
+  font-weight: 500;
   font-family: sans-serif;
-  font-size: 8vw;
-  letter-spacing: -20px;
+  font-size: 10vw;
+  letter-spacing: -25px;
   text-transform: uppercase;
   color: deepskyblue;
   background: -webkit-linear-gradient(135deg, dodgerblue, #810081);
@@ -181,11 +186,11 @@ footer .containerFooter .contactInfo > i a:hover {
 }
 .accueil .containerAccueil h2 {
   position: relative;
-  top: 57%;
+  top: 44%;
   font-family: sans-serif;
-  font-size: 8vw;
+  font-size: 10vw;
   font-weight: 100;
-  letter-spacing: -19px;
+  letter-spacing: -20px;
   text-transform: uppercase;
   color: orangered;
 }
@@ -199,17 +204,12 @@ footer .containerFooter .contactInfo > i a:hover {
     transform: translateY(0);
   }
 }
-@media screen and (min-width: 1920px) {
-  .accueil .containerAccueil h1 {
-    font-size: 7vw;
-  }
-  .accueil .containerAccueil h2 {
-    font-size: 7vw;
-  }
-}
 @media screen and (min-width: 1024px) and (max-width: 1919px) {
-  .accueil .containerAccueil > h2 {
-    top: 63%;
+  .accueil .containerAccueil > h1 {
+    letter-spacing: -15px;
+  }
+  .accueil h2 {
+    top: 43%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -236,16 +236,16 @@ footer .containerFooter .contactInfo > i a:hover {
     justify-content: center;
   }
   .accueil .containerAccueil h1 {
-    top: 10%;
-    font-size: 9vw;
-    font-weight: 600;
-    letter-spacing: -3px;
+    top: 13%;
+    font-size: 13vw;
+    font-weight: 400;
+    letter-spacing: -5px;
   }
   .accueil .containerAccueil h2 {
-    top: 4%;
-    font-size: 9vw;
+    top: 7%;
+    font-size: 13vw;
     font-weight: 300;
-    letter-spacing: -3px;
+    letter-spacing: 0;
   }
 }
 .accueil .containerPortfolio {
@@ -288,15 +288,7 @@ footer .containerFooter .contactInfo > i a:hover {
 }
 @media screen and (min-width: 350px) and (max-width: 767px) {
   .accueil .containerPortfolio #boxPortfolio .titlePortfolio {
-    left: 0;
-    padding: 2vh 15vw;
-    margin-bottom: 2vh;
-    display: flex;
-    justify-content: center;
-  }
-  .accueil .containerPortfolio #boxPortfolio .titlePortfolio img {
-    width: 70%;
-    border-radius: 20px;
+    visibility: hidden;
   }
 }
 .accueil .containerPortfolio #boxPortfolio .contentPortfolio {
@@ -328,6 +320,8 @@ footer .containerFooter .contactInfo > i a:hover {
   .accueil .containerPortfolio #boxPortfolio .contentPortfolio {
     right: 0;
     padding: 2vh 2vw;
+    position: relative;
+    top: -70vh;
   }
   .accueil .containerPortfolio #boxPortfolio .contentPortfolio h3 {
     font-size: 5vw;
@@ -349,7 +343,7 @@ footer .containerFooter .contactInfo > i a:hover {
 @media screen and (min-width: 350px) and (max-width: 767px) {
   .accueil .containerPortfolio {
     position: relative;
-    top: -30%;
+    top: -20vh;
   }
   .accueil .containerPortfolio #boxPortfolio {
     margin: 5vh 0;
@@ -386,22 +380,55 @@ footer .containerFooter .contactInfo > i a:hover {
   border: 1px solid orangered;
   transition: 0.4s ease-in-out;
 }
-.accueil .containerCV img {
-  width: 30%;
+.accueil .containerCV .boxCV {
+  width: 90%;
   margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.accueil .containerCV .boxCV .animClipArt {
+  width: 500px;
+  text-align: center;
+  animation: animClipArt 3s ease-in-out infinite;
+}
+@keyframes animClipArt {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 767px) {
+  .accueil .containerCV .boxCV .animClipArt {
+    width: 250px;
+  }
+}
+.accueil .containerCV .boxCV .imgCV {
+  width: 30%;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
-.accueil .containerCV img:hover {
-  transform: scale(1.75);
+.accueil .containerCV .boxCV .imgCV:hover {
+  transform: scale(1.3);
   transform-origin: 50% 100%;
   transition: all 1s ease-in-out;
 }
 @media screen and (min-width: 350px) and (max-width: 767px) {
+  .accueil .containerCV .boxCV .imgCV {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 767px) {
   .accueil .containerCV {
     position: relative;
-    top: -30%;
+    top: -90vh;
   }
   .accueil .containerCV a {
     font-size: 3vw;
@@ -413,6 +440,11 @@ footer .containerFooter .contactInfo > i a:hover {
   }
 }
 
+@media screen and (min-width: 350px) and (max-width: 767px) {
+  .accueil {
+    height: 250vh;
+  }
+}
 .containerProjet {
   width: 90%;
   margin: 10vh auto;
@@ -500,6 +532,22 @@ footer .containerFooter .contactInfo > i a:hover {
 .containerProjet #boxProjet .contentProjet .projets .cardFace p {
   text-align: center;
 }
+.containerProjet #boxProjet .contentProjet .projets .cardFace .btnVisite {
+  visibility: hidden;
+  background: #FE4A49;
+  padding: 1vh 5vw;
+  text-decoration: none;
+  color: #f8f8f8;
+  text-transform: uppercase;
+  margin: 1vh auto;
+  text-align: center;
+}
+.containerProjet #boxProjet .contentProjet .projets .cardFace .btnVisite:hover {
+  background: #f8f8f8;
+  border: 1px solid #FE4A49;
+  color: #FE4A49;
+  transition: 0.5s ease;
+}
 .containerProjet #boxProjet .contentProjet .projets .cardBack {
   position: absolute;
   width: 100%;
@@ -579,6 +627,9 @@ footer .containerFooter .contactInfo > i a:hover {
   }
   .containerProjet #boxProjet .contentProjet .projets .cardFace p {
     font-size: 3vw;
+  }
+  .containerProjet #boxProjet .contentProjet .projets .cardFace .btnVisite {
+    visibility: visible;
   }
   .containerProjet #boxProjet .contentProjet .projets .cardBack .langage {
     margin: 2vh 0;

@@ -32,13 +32,13 @@ header{
                 a{
                     text-decoration: none;
                     display: inline-block;
-                    color: $rifleGreen;
+                    color: black;
                     font-size: 17px;
                     &:hover{
                         transform: scale(1.2);
                         transition: all 0.35s ease-in-out;
                         z-index: 1;
-                        color: $tartOrange;
+                        color: orangered;
                     }
                 }
                 .social{
@@ -72,7 +72,7 @@ header{
             background-color: rgba(0, 0, 0, 0.9);
             transition: top 1s ease-in-out;
             display: none;
-            color: $tartOrange;
+            color: orangered;
             li{
                 a{
                     padding: 10px 10px;
@@ -102,5 +102,8 @@ header{
     }
     @media screen and (min-width: 350px) and (max-width:767px){
         height: 15vh;
+    }
+    @media screen and (min-width:1024px) and (max-width: 1919px){
+        height: 12vh;
     }
 }

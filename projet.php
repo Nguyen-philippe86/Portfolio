@@ -13,6 +13,8 @@ require 'includes/header.php';
                     <p>Petite annonces de vente & location de biens immobilers sous forme de CRUD avec un système
                         d'authentification et une interface
                         administrateur. (voir détails au verso)</p>
+                    <a class="btnVisite" href="https://agence-code.philippe-nguyen.com" target="_blank">Voir le
+                        site</a>
                 </div>
                 <div class="cardBack">
                     <img src="assets/img/agence_code.png">
@@ -48,6 +50,7 @@ require 'includes/header.php';
                     <h3>Projet personnel | My cave</h3>
                     <p>Présentation des vins du monde sous forme de CRUD avec un système
                         d'authentification. (voir détails au verso)</p>
+                    <a class="btnVisite" href="https://my-cave.philippe-nguyen.com" target="_blank">Voir le site</a>
                 </div>
                 <div class="cardBack">
                     <img src="assets/img/my_cave.png" alt="">

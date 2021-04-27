@@ -85,6 +85,22 @@
                     p{
                         text-align: center;
                     }
+                    .btnVisite{
+                        visibility: hidden;
+                        background: #FE4A49;
+                        padding: 1vh 5vw;
+                        text-decoration: none;
+                        color: #f8f8f8;
+                        text-transform: uppercase;
+                        margin: 1vh auto;
+                        text-align: center;
+                        &:hover{
+                            background: $mintCream;
+                            border: 1px solid $tartOrange;
+                            color: $tartOrange;
+                            transition: 0.5s ease;
+                        }
+                    }
                 }
                 .cardBack{
                     position: absolute;
@@ -162,6 +178,9 @@
                         }
                         p{
                             font-size: 3vw;
+                        }
+                        .btnVisite{
+                            visibility: visible;
                         }
                     }
                     .cardBack{
